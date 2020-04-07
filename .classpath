@@ -6,5 +6,10 @@
 	<classpathentry kind="lib" path="httpcore-4.4.10.jar"/>
 	<classpathentry kind="lib" path="httpclient-4.5.6.jar"/>
 	<classpathentry kind="lib" path="jsoup-1.11.3 (1).jar"/>
+	<classpathentry kind="lib" path="simmetrics_jar_v1_6_2_d07_02_07.jar"/>
+	<classpathentry kind="lib" path="fontbox-2.0.19.jar"/>
+	<classpathentry kind="lib" path="pdfbox-2.0.19.jar"/>
+	<classpathentry kind="lib" path="commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="commons-text-1.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

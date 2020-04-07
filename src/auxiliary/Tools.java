@@ -3,6 +3,7 @@ package auxiliary;
 import java.io.IOException;
 import java.util.Date;
 
+import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -118,4 +119,23 @@ public class Tools {
 	public void print(Object arg) {
 		System.out.println(new Date() + ": " + arg.toString());
 	}
+	
+	/*
+	 * 
+	 */
+	public double stringSimilarity(String s1, String s2) {
+		print("Calculating String Similarity");
+		if(s1!=null&&s2!=null){
+			String longer = s1, shorter = s2;
+		    if (s1.length() < s2.length()) {
+		      longer = s2; shorter = s1;
+		    }
+		    int longerLength = longer.length();
+		    if (longerLength == 0) { return 1.0;}
+		    LevenshteinDistance levenshteinDistance = new LevenshteinDistance();
+		    return (longerLength - levenshteinDistance.apply(longer, shorter)) / (double) longerLength;
+		}
+		
+	    return 0;
+	  }
 }
