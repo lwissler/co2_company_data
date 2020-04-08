@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.io.StringReader;
 import java.util.Date;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -62,6 +63,11 @@ public class CDPParser {
 		tools.print(tools.stringSimilarity(basftext, bayertext));
 		tools.print(tools.stringSimilarity(cocatext, contitext));
 		tools.print(tools.stringSimilarity(basftext, contitext));
+		
+	}
+	
+	public void filterStopWords(String text) {
+		
 		
 	}
 }
