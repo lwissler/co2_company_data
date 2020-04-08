@@ -1,7 +1,11 @@
 package auxiliary;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.apache.http.HttpEntity;
@@ -138,4 +142,65 @@ public class Tools {
 		
 	    return 0;
 	  }
+
+/*
+ * 
+ */
+	public String[] loadFileToArray(String path) throws IOException {
+		FileReader fileReader = new FileReader(path);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        List<String> lines = new ArrayList<String>();
+        String line = null;
+        while ((line = bufferedReader.readLine()) != null) {
+            lines.add(line);
+        }
+        bufferedReader.close();
+        return lines.toArray(new String[lines.size()]);
+	}
+
+/*
+ * 
+ */
+	public String[] loadStopWords(String language) throws IOException {
+		String path = null;
+		if(language.equals("de")) {
+			path = "stopwords_de";
+		}else if(language.equals("en")) {
+			path = "stopwords_en";
+		}else {
+			return null;
+		}
+		return loadFileToArray(path);
+	}
+	
+	/*
+	 * 
+	 */
+	public void printArgs(String s, Object[] o, Boolean csv){
+		if(!csv){
+			System.out.print(s + ": ");
+			for(Object k:o){
+				System.out.print(k + ", ");
+			}
+			System.out.println();
+		}else{
+			System.out.print(s.replace(" ", "") + ", ");
+			for(Object k:o){
+				System.out.print(k.toString().replace(" ", "") + ", ");
+			}
+			System.out.println();
+		}
+	}
+	
+	/*
+	 * 
+	 */
+	
+	public String stringArrToString(String[] stringArray) {
+	      StringBuffer sb = new StringBuffer();
+	      for(int i = 0; i < stringArray.length; i++) {
+	         sb.append(stringArray[i]+" ");
+	      }
+	      return sb.toString();
+	}
 }

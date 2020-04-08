@@ -7,11 +7,15 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.StringReader;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 
 import auxiliary.Tools;
+import opennlp.tools.stemmer.PorterStemmer;
+import opennlp.tools.tokenize.SimpleTokenizer;
 
 public class CDPParser {
 	Tools tools = new Tools();
@@ -36,28 +40,36 @@ public class CDPParser {
 		PDDocument doc = PDDocument.load(file);
 		PDFTextStripper stripper = new PDFTextStripper();
 		String cocatext = stripper.getText(doc);
-		System.out.println(cocatext);
+//		System.out.println(cocatext);
 		doc.close();
 		
 		file = new File(bayer);
 		 doc = PDDocument.load(file);
 		String bayertext = stripper.getText(doc);
-		System.out.println(bayertext);
+//		System.out.println(bayertext);
 		doc.close();
 		
-		file = new File(coca);
+		file = new File(conti);
 		 doc = PDDocument.load(file);
 		String contitext = stripper.getText(doc);
-		System.out.println(contitext);
+//		System.out.println(contitext);
 		doc.close();
 		
-		file = new File(coca);
+		file = new File(basf);
 		 doc = PDDocument.load(file);
 		String basftext = stripper.getText(doc);
-		System.out.println(basftext);
+//		System.out.println(basftext);
 		doc.close();
 		
 		
+		cocatext=reduce(cocatext,"en");
+		basftext=reduce(basftext,"en");
+		contitext=reduce(contitext,"en");
+		bayertext=reduce(bayertext,"en");
+		tools.print(bayertext);
+		tools.print(basftext);
+		tools.print(contitext);
+		tools.print(cocatext);
 		
 		tools.print(tools.stringSimilarity(cocatext, bayertext));
 		tools.print(tools.stringSimilarity(basftext, bayertext));
@@ -66,8 +78,39 @@ public class CDPParser {
 		
 	}
 	
-	public void filterStopWords(String text) {
-		
-		
+	private String[] stem(String[] tokens) {
+		PorterStemmer stemmer = new PorterStemmer();
+		for(int i = 0; i < tokens.length; i++) {         
+	         tokens[i] = stemmer.stem(tokens[i]);  
+	     }
+		return tokens;
+	}
+
+	public String filterStopWords(String text, String language) {
+		String[] stopwords = {};
+		try {
+			stopwords = tools.loadStopWords(language);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+		String stopWordsPattern = String.join("|", stopwords);
+		Pattern pattern = Pattern.compile("\\b(?:" + stopWordsPattern + ")\\b\\s*", Pattern.CASE_INSENSITIVE);
+		Matcher matcher = pattern.matcher(text);
+		return matcher.replaceAll("");
+	}
+	
+	public String[] tokenize(String s) {
+		      SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;  
+		      return simpleTokenizer.tokenize(s);  
+	}
+	/*
+	 * process String to reduce size with stemming, tokenizing, stopword removal and so on
+	 * 
+	 */
+	public String reduce(String s, String language) {
+		s = filterStopWords(s, language);
+		String[] tokens = tokenize(s);
+		stem(tokens);
+		return tools.stringArrToString(tokens);
 	}
 }

@@ -44,5 +44,6 @@
 	<classpathentry kind="lib" path="jersey-media-jaxb-2.25.jar"/>
 	<classpathentry kind="lib" path="jersey-media-json-jackson-2.25.jar"/>
 	<classpathentry kind="lib" path="jersey-server-2.25.jar"/>
+	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
