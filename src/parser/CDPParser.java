@@ -12,6 +12,7 @@ import java.util.regex.Pattern;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.json.simple.JSONObject;
 
 import auxiliary.Tools;
 import opennlp.tools.stemmer.PorterStemmer;
@@ -60,7 +61,8 @@ public class CDPParser {
 		String basftext = stripper.getText(doc);
 //		System.out.println(basftext);
 		doc.close();
-		
+
+		parse(cocatext);
 		
 		cocatext=reduce(cocatext,"en");
 		basftext=reduce(basftext,"en");
@@ -75,9 +77,26 @@ public class CDPParser {
 		tools.print(tools.stringSimilarity(basftext, bayertext));
 		tools.print(tools.stringSimilarity(cocatext, contitext));
 		tools.print(tools.stringSimilarity(basftext, contitext));
-		
 	}
 	
+	private void parse(String cocatext) {
+		JSONObject res = new JSONObject();
+		cocatext = cocatext.substring(cocatext.indexOf("C5.2"));
+		String standard = cocatext.split("calculate Scope 1 and Scope 2 emissions.")[1].split("C6. Emissions")[0];
+		String scope1 = cocatext.split("Gross global Scope 1 emissions (metric tons CO2e)")[1].split("Start date")[0];
+		String scope1StartDate = cocatext.split("Start date")[1].split("End date")[0];
+		String scope1EndDate = cocatext.split("End date")[1].split("Comment")[0];
+		
+		String scope2location = cocatext.split("Scope 2, location-based")[1].split("Scope 2, market-based (if applicable)")[0];
+		String scope2market = cocatext.split("Scope 2, market-based (if applicable)")[1].split("Start date")[0];
+		String scope2StartDate = cocatext.split("Start date")[1].split("End date")[0];
+		String scope2EndDate = cocatext.split("End date")[1].split("Comment")[0];
+		
+//		String scope3 = cocatext.split("Scope 2, location-based")[1].split("Scope 2, market-based (if applicable)")[0];
+		
+		
+	}
+
 	private String[] stem(String[] tokens) {
 		PorterStemmer stemmer = new PorterStemmer();
 		for(int i = 0; i < tokens.length; i++) {         

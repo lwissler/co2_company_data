@@ -1,10 +1,12 @@
 package auxiliary;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -81,6 +83,7 @@ public class HTTPURLConnectionImpl {
 		con.setRequestProperty("Content-Type", "application/json");
 		con.setRequestProperty ("x-auth-token", token);
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+		con.setRequestProperty("Accept-Charset", "UTF-8");
 
 //		t.print("Sending POST request to URL : " + url);
 		t.print("Post parameters : " + content);
@@ -88,8 +91,10 @@ public class HTTPURLConnectionImpl {
 		// Send post request
 		con.setDoOutput(true);
 		DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-		wr.writeBytes(content);
-		wr.flush();
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(wr, "UTF-8"));
+		writer.write(content);
+		writer.flush();
+		writer.close();
 		wr.close();
 
 		int responseCode = con.getResponseCode();
@@ -138,13 +143,17 @@ public class HTTPURLConnectionImpl {
 		con.setRequestProperty("Content-Type", "application/json");
 		con.setRequestProperty ("x-auth-token", token);
 		con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+		con.setRequestProperty("Accept-Charset", "UTF-8");
 		
 		// Send post request
 		con.setDoOutput(true);
 		DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-		wr.writeBytes(content);
-		wr.flush();
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(wr, "UTF-8"));
+		writer.write(content);
+		writer.flush();
+		writer.close();
 		wr.close();
+
 
 		int responseCode = con.getResponseCode();
 		System.out.print("Response Code : " + responseCode +" " +con.getResponseMessage());
