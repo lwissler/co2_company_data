@@ -1,17 +1,27 @@
 package parser;
 
+import java.awt.geom.Rectangle2D;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.StringReader;
+import java.math.BigDecimal;
+import java.net.URL;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.text.PDFTextStripperByArea;
+import org.glassfish.jersey.internal.inject.ExtractorException;
 import org.json.simple.JSONObject;
 
 import auxiliary.Tools;
@@ -21,8 +31,8 @@ import opennlp.tools.tokenize.SimpleTokenizer;
 public class CDPParser {
 	Tools tools = new Tools();
 	
-	public void parsePDF() throws IOException{
-		Date now = new Date();
+	public void parsePDF(String url) throws IOException, ParseException{
+//		Date now = new Date();
 //		String nowStr = now.toLocaleString().replace(":", "-").replace(".", "_");
 //		try {
 //			PrintStream out = new PrintStream(new FileOutputStream("./log/"+nowStr+".txt"));
@@ -32,69 +42,347 @@ public class CDPParser {
 //		}
 
 		
-		String coca = "2019-cdp-climate-change-response.pdf";
-		String bayer = "20190712-cdp-climate-report-bag-final.pdf";
-		String conti = "climate-change--data.pdf";
-		String basf = "CDP_Programme_Response_Climate_Change_2019.pdf";
+//		String coca = "2019-cdp-climate-change-response.pdf";
+//		String bayer = "20190712-cdp-climate-report-bag-final.pdf";
+//		String conti = "climate-change--data.pdf";
+//		String basf = "CDP_Programme_Response_Climate_Change_2019.pdf";
+//		String MSCI = "MSCI-CDP-Climate-Change-Questionnaire-2019.pdf";
+//		String eastman = "https://www.eastman.com/Company/Sustainability/Documents/CDP-Climate-Change-2019.pdf";//"CDP-Climate-Change-2019.pdf";
+//		String saintgobain = "cdp_2019_cc_final_version.pdf";
+//		String commbank = "2018-cdp-submission.pdf";
+//		String akamai = "cdp-2019.pdf";
+//		String enka = "ENKA-CDP-Climate-Change-2018-Answers.pdf";
 		
-		File file = new File(coca);
-		PDDocument doc = PDDocument.load(file);
-		PDFTextStripper stripper = new PDFTextStripper();
-		String cocatext = stripper.getText(doc);
-//		System.out.println(cocatext);
-		doc.close();
+		tools.print(url);
+		process(url);
+//		tools.print("BASF");
+//		process(basf);
+//		tools.print("CONTI");
+//		process(conti);
+//		tools.print("BAYER");
+//		process(bayer);
+//		tools.print("MSCI");
+//		process(MSCI);
+//		tools.print("eastman");
+//		process(eastman);
+//		tools.print("Gobain");
+//		process(saintgobain);
+//		tools.print("COMMBANK");
+//		process(commbank);
+//		tools.print("Akamai");
+//		process(akamai);
+//		tools.print("ENKA");
+//		process(enka);
 		
-		file = new File(bayer);
-		 doc = PDDocument.load(file);
-		String bayertext = stripper.getText(doc);
-//		System.out.println(bayertext);
-		doc.close();
 		
-		file = new File(conti);
-		 doc = PDDocument.load(file);
-		String contitext = stripper.getText(doc);
-//		System.out.println(contitext);
-		doc.close();
 		
-		file = new File(basf);
-		 doc = PDDocument.load(file);
-		String basftext = stripper.getText(doc);
-//		System.out.println(basftext);
-		doc.close();
+		
+//		
+		
 
-		parse(cocatext);
 		
-		cocatext=reduce(cocatext,"en");
-		basftext=reduce(basftext,"en");
-		contitext=reduce(contitext,"en");
-		bayertext=reduce(bayertext,"en");
-		tools.print(bayertext);
-		tools.print(basftext);
-		tools.print(contitext);
-		tools.print(cocatext);
+//		String bayertext = getTextByRegion(bayer);
+//		String contitext = getTextByRegion(conti);
+	
+//		String cocatext = getTextByRegion(coca);
+//		parse(cocatext);
+//		
+	
+//		parse(contitext);
+////		
+//		parse(bayertext);
 		
-		tools.print(tools.stringSimilarity(cocatext, bayertext));
-		tools.print(tools.stringSimilarity(basftext, bayertext));
-		tools.print(tools.stringSimilarity(cocatext, contitext));
-		tools.print(tools.stringSimilarity(basftext, contitext));
+//		cocatext=reduce(cocatext,"en");
+//		basftext=reduce(basftext,"en");
+//		contitext=reduce(contitext,"en");
+//		bayertext=reduce(bayertext,"en");
+//		tools.print(bayertext);
+//		tools.print(basftext);
+//		tools.print(contitext);
+//		tools.print(cocatext);
+//		
+//		tools.print(tools.stringSimilarity(cocatext, bayertext));
+//		tools.print(tools.stringSimilarity(basftext, bayertext));
+//		tools.print(tools.stringSimilarity(cocatext, contitext));
+//		tools.print(tools.stringSimilarity(basftext, contitext));
 	}
 	
-	private void parse(String cocatext) {
+	private void process(String url) {
+		try {
+			parse(readText(url));
+		} catch (Exception e) {
+			e.printStackTrace();
+			try {
+				parse(getTextByRegion(url,true,false));
+			} catch (Exception e1) {
+				try {
+					e1.printStackTrace();
+					parse(getTextByRegion(url,false,true));
+				} catch (Exception e2) {
+					try {
+						e2.printStackTrace();
+						parse(getTextByRegion(url,true,true));
+					} catch (Exception e3) {
+						e3.printStackTrace();
+					} 
+				} 
+			} 
+		} 
+	}
+
+	private String readText(String urlPath) throws IOException {
+//		File file = new File(urlPath);
+		URL url = new URL(urlPath);
+		InputStream input = url.openStream();
+//		 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+//		InputStream in = new InputStreamReader(url.openStream());
+		PDDocument doc = PDDocument.load(input);
+		PDFTextStripper stripper = new PDFTextStripper();
+		String text = stripper.getText(doc);
+		doc.close();
+		return text;
+	}
+
+	public String getTextByRegion(String path, Boolean header, Boolean footer) throws IOException {
+		String text = "";
+        File file = new File(path);
+        PDDocument document = PDDocument.load(file);
+        //Rectangle2D region = new Rectangle2D.Double(x,y,width,height);
+        String regionName = "region";
+        PDFTextStripperByArea stripper;
+        
+        PDPage page = document.getPage(0);
+        float height = page.getMediaBox().getHeight();
+        float width = page.getMediaBox().getWidth();
+        int ypos = 0;
+        
+        if(header&&!footer) {
+        	ypos = 100;
+        	height = height-100;
+        }
+        if(!header&&footer) {
+        	height = height-100;
+        }
+        if(header&&footer) {
+        	ypos = 100;
+        	height = height-100;
+        }
+        
+        Rectangle2D region = new Rectangle2D.Double(0, ypos, width, height);
+        
+        for(int i = 0; i < document.getPages().getCount(); i++) {
+        	page = document.getPage(i);
+            stripper = new PDFTextStripperByArea();
+            stripper.addRegion(regionName, region);
+            stripper.extractRegions(page);
+            text = text + stripper.getTextForRegion(regionName);
+        }
+        
+//        tools.print(text);
+        return text;
+    }
+	
+	@SuppressWarnings("unchecked")
+	private void parse(String text) throws Exception {
 		JSONObject res = new JSONObject();
-		cocatext = cocatext.substring(cocatext.indexOf("C5.2"));
-		String standard = cocatext.split("calculate Scope 1 and Scope 2 emissions.")[1].split("C6. Emissions")[0];
-		String scope1 = cocatext.split("Gross global Scope 1 emissions (metric tons CO2e)")[1].split("Start date")[0];
-		String scope1StartDate = cocatext.split("Start date")[1].split("End date")[0];
-		String scope1EndDate = cocatext.split("End date")[1].split("Comment")[0];
 		
-		String scope2location = cocatext.split("Scope 2, location-based")[1].split("Scope 2, market-based (if applicable)")[0];
-		String scope2market = cocatext.split("Scope 2, market-based (if applicable)")[1].split("Start date")[0];
-		String scope2StartDate = cocatext.split("Start date")[1].split("End date")[0];
-		String scope2EndDate = cocatext.split("End date")[1].split("Comment")[0];
+		res.put("Company", getCompany(text));
 		
-//		String scope3 = cocatext.split("Scope 2, location-based")[1].split("Scope 2, market-based (if applicable)")[0];
+		text = text.substring(text.indexOf("C5.2"));
+		text = text.replace("\n", " ").replace("\r", " ").replace(System.getProperty("line.separator"), " ").replaceAll(" +", " ");;
 		
+		res.put("ReportingStandard", getStandard(text));
 		
+		JSONObject scope1 = new JSONObject();
+		res.put("Scope 1", scope1);
+		
+		scope1.put("CO2", getScope1CO2(text));		
+		scope1.put("StartDate", getScope1StartDate(text));
+		scope1.put("EndDate", getScope1EndDate(text));
+		
+		JSONObject scope2 = new JSONObject();
+		res.put("Scope 2", scope2);
+		
+		scope2.put("CO2", getScope2Location(text));
+		scope2.put("CO2 market based", getScope2market(text));
+		scope2.put("StartDate", getScope2StartDate(text));
+		scope2.put("StartDate", getScope2EndDate(text));
+		
+		JSONObject scope3json = new JSONObject();
+		res.put("Scope 3", scope3json);
+		
+		scope3json.put("CO2", getScope3CO2(text));
+		
+		tools.print(res);
+	}
+	
+	
+
+	private Long getScope3CO2(String text) {
+		Long res = null;
+		
+		try {
+			String scope3 = text.split(Pattern.quote("6.5 (C6.5) "))[1].split("Metric tonnes CO2e")[1].split("Emissions calculation methodology")[0].trim();
+			res = tools.parseNumber(scope3);
+		} catch (Exception e) {
+		}
+		
+		return res;
+	}
+
+	private String getScope2EndDate(String text) throws ParseException {
+		
+		String res = null;
+		
+		try {
+			String scope2EndDate = text.split("End date")[1].split("Comment")[0].trim();
+			res = tools.formatCDPDate(scope2EndDate.replace(".", "").replace(",", ""));
+		} catch (Exception e) {
+			text = text.split("6.3")[1];
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[4].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[4].trim());
+			}
+		}
+		
+		return res;
+	}
+
+	private String getScope2StartDate(String text) throws ParseException {
+		String res = null;
+		
+		try {
+			String scope2StartDate = text.split("Start date")[1].split("End date")[0].trim();
+			res = tools.formatCDPDate(scope2StartDate.replace(".", "").replace(",", ""));
+		} catch (Exception e) {
+			text = text.split("6.3")[1];
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			}
+		}
+		
+		return res;
+	}
+
+	private Long getScope2market(String text) {
+		Long res = null;
+		String scope2market;
+		try {
+			scope2market = text.split(Pattern.quote("Scope 2, market-based (if applicable)"))[1].split("Start date")[0].trim();
+			res = tools.parseNumber(scope2market);
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				text = text.split("6.3")[1];
+				scope2market = text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim();
+				res = tools.parseNumber(scope2market);
+			} catch (Exception e1) {
+			}
+		}
+		
+		return res;
+	}
+
+	private Long getScope2Location(String text) {
+		Long res = null;
+		
+		try {
+			String scope2location = text.split(Pattern.quote("6.3 (C6.3)"))[1].split("Scope 2, location-based")[1].split(Pattern.quote("Scope 2, market-based (if applicable)"))[0].trim();
+			res = tools.parseNumber(scope2location);
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				text = text.split("6.3")[1];
+				String scope2location = text.split(Pattern.quote("Comment"))[1].split(" ")[1].trim();
+				res = tools.parseNumber(scope2location);
+			} catch (Exception e1) {
+			}
+		}
+		
+		return res;
+	}
+
+	private String getScope1EndDate(String text) throws ParseException {
+		String res = null;
+		try {
+			String scope1EndDate = text.split("End date")[1].split("Comment")[0].trim();
+			res = tools.formatCDPDate(scope1EndDate.replace(",", ""));
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			}
+		}
+		
+		return res;
+	}
+
+	private String getScope1StartDate(String text) throws ParseException {
+		String res = null;
+		
+		try {
+			String scope1StartDate = text.split("Start date")[1].split("End date")[0].trim();
+			res = tools.formatCDPDate(scope1StartDate.replace(",", ""));
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim());
+			}
+		}
+		
+		return res;
+	}
+
+	private Object getCompany(String text) {
+		String company = text.split(Pattern.quote("(C0.1) Give a general description and introduction to your organization."))[1].split(Pattern.quote("C0.2"))[0].trim();
+		//getCompanyList
+		//iterate companies and if contained return
+		return null;
+	}
+
+	private Object getStandard(String text) {
+		String standard;
+		try {
+			standard = text.split("calculate Scope 1 and Scope 2 emissions.")[1].split("C6. Emissions")[0].trim();
+		} catch (Exception e) {
+			try {
+				standard = text.split("calculate Scope1 and Scope 2 emissions.")[1].split("C6. Emissions")[0].trim();
+			} catch (Exception e1) {
+				try {
+					standard = text.split("calculate Scope 1 and Scope2 emissions.")[1].split("C6. Emissions")[0].trim();
+				} catch (Exception e2) {
+					standard = text.split("calculate Scope1 and Scope2 emissions.")[1].split("C6. Emissions")[0].trim();
+				}
+			}
+		}
+		return standard.split(":")[0];
+	}
+
+	private Long getScope1CO2(String text) {
+		String scope1CO2;
+		Long res = null; 
+		try {
+			scope1CO2 = text.split(Pattern.quote("Gross global Scope 1 emissions (metric tons CO2e)"))[1].split("Start date")[0].trim();
+		} catch (Exception e) {
+			scope1CO2 = text.split(Pattern.quote("Gross global Scope1 emissions (metric tons CO2e)"))[1].split("Start date")[0].trim();
+		}
+		
+		try {
+			res = tools.parseNumber(scope1CO2);
+		} catch (NumberFormatException e) {
+			//probably table based reply
+			scope1CO2 = text.split(Pattern.quote("Comment"))[1].split(" ")[1].trim();
+			res = tools.parseNumber(scope1CO2);
+		}
+		
+		return res;
 	}
 
 	private String[] stem(String[] tokens) {

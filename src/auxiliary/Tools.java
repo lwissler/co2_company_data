@@ -3,11 +3,16 @@ package auxiliary;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+import java.util.regex.Pattern;
 
 import org.apache.commons.text.similarity.LevenshteinDistance;
+import org.apache.commons.text.similarity.SimilarityScoreFrom;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -26,6 +31,7 @@ import org.jsoup.Connection.Response;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
 
 public class Tools {
 	/**
@@ -202,5 +208,27 @@ public class Tools {
 	         sb.append(stringArray[i]+" ");
 	      }
 	      return sb.toString();
+	}
+	
+	public String formatCDPDate(String input) throws ParseException {
+		SimpleDateFormat fmt = new SimpleDateFormat("MMMM dd yyyy", Locale.US);
+		Date d = fmt.parse(input);
+		return format(d);
+	}
+
+	public String formatCDPDate2(String input) throws ParseException {
+		SimpleDateFormat fmt = new SimpleDateFormat("MM/dd/yyyy", Locale.US);
+		Date d = fmt.parse(input);
+		return format(d);
+	}
+
+	private String format(Date d) {
+		SimpleDateFormat ourFormat = new SimpleDateFormat ("yyyy-MM-dd");
+		return ourFormat.format(d);
+	}
+
+
+	public Long parseNumber(String number) {
+		return Long.parseLong(number.replace(",", "").split(Pattern.quote("."))[0].split(" ")[0]);
 	}
 }

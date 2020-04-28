@@ -2,6 +2,12 @@ package main;
 
 import parser.CDPParser;
 import parser.GHG;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.util.Date;
+
 import auxiliary.Settings;
 import opennlp.tools.parser.Parse;
 
@@ -11,12 +17,23 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		PrintStream out;
+		Date now = new Date();
+//		String nowStr = now.toLocaleString().replace(":", "-").replace(".", "_");
+//		try {
+//			out = new PrintStream(new FileOutputStream("./log/parse"+nowStr+".txt"));
+//			System.setOut(out);
+//		} catch (FileNotFoundException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+		
 //		Settings.token = args[0];
 		CDPParser cdpparser = new CDPParser();
 //		GHG ghg = new GHG();
 		
 		try {
-			cdpparser.parsePDF();			
+			cdpparser.parsePDF("https://www.akamai.com/it/it/multimedia/documents/sustainability/cdp-2019.pdf");			
 			
 			
 			
