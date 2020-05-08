@@ -1,0 +1,262 @@
+2020-05-07 08:47:57.443 INFO  (main) [   ] o.e.j.u.log Logging initialized @1786ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-07 08:47:57.580 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+8-LTS
+2020-05-07 08:47:57.595 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/solr/solr-8.5.1/server/contexts/] at interval 0
+2020-05-07 08:47:57.891 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-05-07 08:47:57.899 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-05-07 08:47:57.899 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-05-07 08:47:57.900 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-05-07 08:47:57.966 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-05-07 08:47:57.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
+2020-05-07 08:47:57.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-05-07 08:47:57.971 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\solr\solr-8.5.1
+2020-05-07 08:47:57.972 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-05-07T08:47:57.971511800Z
+2020-05-07 08:47:58.001 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\solr\solr-8.5.1\server\solr
+2020-05-07 08:47:58.008 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\solr\solr-8.5.1\server\solr\solr.xml
+2020-05-07 08:47:58.057 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@455b6df1, but no JMX reporters were configured - adding default JMX reporter.
+2020-05-07 08:47:58.414 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-05-07 08:47:58.546 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@383864d5[provider=null,keyStore=null,trustStore=null]
+2020-05-07 08:47:58.546 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@383864d5[provider=null,keyStore=null,trustStore=null]
+2020-05-07 08:47:58.673 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@5e5af8e1[provider=null,keyStore=null,trustStore=null]
+2020-05-07 08:47:58.674 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@5e5af8e1[provider=null,keyStore=null,trustStore=null]
+2020-05-07 08:47:58.690 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-05-07 08:47:58.801 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-05-07 08:47:58.803 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-05-07 08:47:58.858 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@455b6df1
+2020-05-07 08:47:58.859 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@455b6df1
+2020-05-07 08:47:58.863 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@455b6df1
+2020-05-07 08:47:58.891 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\solr\solr-8.5.1\server\solr
+2020-05-07 08:47:58.892 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [cdp, nutch]
+2020-05-07 08:47:58.916 ERROR (coreLoadExecutor-9-thread-1) [   x:cdp] o.a.s.c.XmlConfigFile Exception during parsing file: solrconfig.xml:org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 798; columnNumber: 5; The element type "config" must be terminated by the matching end-tag "</config>".
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1685)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2883)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:173)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:149)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:111)
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:82)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:802)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-05-07 08:47:58.917 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => org.apache.solr.common.SolrException: Unable to create core [cdp]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1327)
+org.apache.solr.common.SolrException: Unable to create core [cdp]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1327) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:802) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.2.jar:4.1.2]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core cdp: Error loading solr config from D:\solr\solr-8.5.1\server\solr\cdp\conf\solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:88) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from D:\solr\solr-8.5.1\server\solr\cdp\conf\solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:111) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:82) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 798; columnNumber: 5; The element type "config" must be terminated by the matching end-tag "</config>".
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:173) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:149) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:111) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:82) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
+	... 7 more
+Caused by: org.xml.sax.SAXParseException: The element type "config" must be terminated by the matching end-tag "</config>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[?:?]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1685) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2883) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140) ~[?:?]
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:173) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:149) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:111) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:82) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302) ~[?:?]
+	... 7 more
+2020-05-07 08:47:58.935 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrConfig Couldn't add files from D:\solr\solr-8.5.1\contrib\ltr\lib filtered by .*\.jar to classpath: D:\solr\solr-8.5.1\contrib\ltr\lib
+2020-05-07 08:47:58.936 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader [nutch] Added 1 libs to classloader, from paths: [/D:/solr/solr-8.5.1/dist]
+2020-05-07 08:47:59.073 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2020-05-07 08:47:59.202 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.s.IndexSchema [nutch] Schema name=nutch
+2020-05-07 08:47:59.233 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDateField]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.235 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieDoubleField]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.243 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieFloatField]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.248 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieIntField]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.254 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.257 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.TrieLongField]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.289 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.292 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2020-05-07 08:47:59.327 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7e0aadd0{/solr,file:///D:/solr/solr-8.5.1/server/solr-webapp/webapp/,AVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp}
+2020-05-07 08:47:59.335 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5b080f3a{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-07 08:47:59.336 INFO  (main) [   ] o.e.j.s.Server Started @3680ms
+2020-05-07 08:47:59.377 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.s.IndexSchema Loaded schema nutch/1.5 with uniqueid field id
+2020-05-07 08:47:59.387 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.CoreContainer Creating SolrCore 'nutch' using configuration from instancedir D:\solr\solr-8.5.1\server\solr\nutch, trusted=true
+2020-05-07 08:47:59.404 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.nutch' (registry 'solr.core.nutch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@455b6df1
+2020-05-07 08:47:59.416 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.c.SolrCore [[nutch] ] Opening new SolrCore at [D:\solr\solr-8.5.1\server\solr\nutch], dataDir=[D:\solr\solr-8.5.1\server\solr\nutch\data\]
+2020-05-07 08:47:59.790 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-07 08:47:59.790 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-07 08:47:59.841 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-07 08:47:59.841 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-07 08:47:59.911 INFO  (qtp1440738283-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=52
+2020-05-07 08:48:00.118 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.s.SolrIndexSearcher Opening [Searcher@709e7f45[nutch] main]
+2020-05-07 08:48:00.124 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\solr\solr-8.5.1\server\solr\nutch\conf
+2020-05-07 08:48:00.135 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedFeatureStore for path /schema/feature-store
+2020-05-07 08:48:00.135 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.ManagedResource No stored data found for /schema/feature-store
+2020-05-07 08:48:00.135 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.l.s.r.ManagedFeatureStore ------ managed feature ~ loading ------
+2020-05-07 08:48:00.136 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/feature-store
+2020-05-07 08:48:00.136 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/feature-store
+2020-05-07 08:48:00.137 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.ltr.store.rest.ManagedModelStore for path /schema/model-store
+2020-05-07 08:48:00.137 WARN  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.ManagedResource No stored data found for /schema/model-store
+2020-05-07 08:48:00.138 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.l.s.r.ManagedModelStore INIT model store
+2020-05-07 08:48:00.138 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.l.s.r.ManagedModelStore ------ managed models ~ loading ------
+2020-05-07 08:48:00.138 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.ManagedResource Notified 1 observers of /schema/model-store
+2020-05-07 08:48:00.138 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.r.RestManager Registered new managed resource /schema/model-store
+2020-05-07 08:48:00.147 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-07 08:48:00.154 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-07 08:48:00.161 INFO  (coreLoadExecutor-9-thread-2) [   x:nutch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-07 08:48:00.182 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@709e7f45[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C608/44:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588767147773}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.5.1):C3004/551:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779350155}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_2(8.5.1):C1497/51:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779352323}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.1):C1115/17:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779354467}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_4(8.5.1):C9256/658:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790756638}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=5) Uninverting(_5(8.5.1):C84:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790756990}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.5.1):C53:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790757243}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.5.1):C10079/185:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790772110}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_8(8.5.1):C69:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790772307}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.5.1):C3029/58:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790778601}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=4) Uninverting(_a(8.5.1):C10272/466:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588804834574}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=4) Uninverting(_b(8.5.1):C1830/27:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588804837538}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=3) Uninverting(_c(8.5.1):C10016/386:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588815915046}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=3) Uninverting(_d(8.5.1):C9223/336:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588826985695}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_e(8.5.1):C10256/371:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588838113133}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_f(8.5.1):C3:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588839499537}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_g(8.5.1):C7:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588840145066}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-07 08:48:00.182 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-07 08:48:00.182 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-07 08:48:00.189 INFO  (searcherExecutor-10-thread-1-processing-x:nutch) [   x:nutch] o.a.s.c.SolrCore [nutch] Registered new searcher Searcher@709e7f45[nutch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.5.1):C608/44:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588767147773}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_1(8.5.1):C3004/551:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779350155}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_2(8.5.1):C1497/51:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779352323}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_3(8.5.1):C1115/17:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588779354467}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_4(8.5.1):C9256/658:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790756638}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=5) Uninverting(_5(8.5.1):C84:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790756990}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.5.1):C53:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790757243}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_7(8.5.1):C10079/185:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790772110}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_8(8.5.1):C69:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790772307}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_9(8.5.1):C3029/58:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588790778601}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=4) Uninverting(_a(8.5.1):C10272/466:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588804834574}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=4) Uninverting(_b(8.5.1):C1830/27:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588804837538}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=3) Uninverting(_c(8.5.1):C10016/386:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588815915046}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=3) Uninverting(_d(8.5.1):C9223/336:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588826985695}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=2) Uninverting(_e(8.5.1):C10256/371:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588838113133}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]:delGen=1) Uninverting(_f(8.5.1):C3:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588839499537}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_g(8.5.1):C7:[diagnostics={java.vendor=Oracle Corporation, os=Windows 10, java.version=11.0.7, java.vm.version=11.0.7+8-LTS, lucene.version=8.5.1, os.arch=amd64, java.runtime.version=11.0.7+8-LTS, source=flush, os.version=10.0, timestamp=1588840145066}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-07 08:49:30.655 ERROR (qtp1440738283-18) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'cdp' is not available due to init failure: Could not load conf for core cdp: Error loading solr config from D:\solr\solr-8.5.1\server\solr\cdp\conf\solrconfig.xml
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1791)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:256)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:539)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core cdp: Error loading solr config from D:\solr\solr-8.5.1\server\solr\cdp\conf\solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:88)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1302)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:802)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from D:\solr\solr-8.5.1\server\solr\cdp\conf\solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157)
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:111)
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:82)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 798; columnNumber: 5; The element type "config" must be terminated by the matching end-tag "</config>".
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:151)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:87)
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:173)
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:149)
+	... 10 more
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/solrconfig.xml; lineNumber: 798; columnNumber: 5; The element type "config" must be terminated by the matching end-tag "</config>".
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1685)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2883)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.solr.core.XmlConfigFile.<init>(XmlConfigFile.java:140)
+	... 13 more
+
+2020-05-07 08:50:19.301 INFO  (qtp1440738283-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588840231989} status=0 QTime=3
+2020-05-07 08:50:19.310 INFO  (qtp1440738283-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1588840231989} status=0 QTime=8
+2020-05-07 08:50:19.346 INFO  (qtp1440738283-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588840231990} status=0 QTime=44
+2020-05-07 08:50:19.352 INFO  (qtp1440738283-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588840231989} status=0 QTime=0
+2020-05-07 08:50:19.357 INFO  (qtp1440738283-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1588840231989} status=0 QTime=4
+2020-05-07 08:50:19.388 INFO  (qtp1440738283-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588840231990} status=0 QTime=36
+2020-05-07 08:50:25.270 INFO  (qtp1440738283-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1588841425197} status=0 QTime=0
+2020-05-07 08:50:25.274 INFO  (qtp1440738283-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1588841425197} status=0 QTime=3
+2020-05-07 08:50:25.325 INFO  (qtp1440738283-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1588841425197} status=0 QTime=54
+2020-05-07 08:52:01.224 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5b080f3a{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-07 08:52:01.224 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-05-07 08:52:01.227 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=670951536
+2020-05-07 08:52:01.228 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.c.SolrCore [nutch]  CLOSING SolrCore org.apache.solr.core.SolrCore@20fdddb8
+2020-05-07 08:52:01.228 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.nutch, tag=SolrCore@20fdddb8
+2020-05-07 08:52:01.228 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@686f20c0: rootName = null, domain = solr.core.nutch, service url = null, agent id = null] for registry solr.core.nutch / com.codahale.metrics.MetricRegistry@37e1d661
+2020-05-07 08:52:01.244 INFO  (coreCloseExecutor-15-thread-1) [   x:nutch] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-05-07 08:52:01.268 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-05-07 08:52:01.268 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@37637a24: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@105b3d86
+2020-05-07 08:52:01.272 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-05-07 08:52:01.272 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2f860823: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@35976ef2
+2020-05-07 08:52:01.274 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-05-07 08:52:01.274 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@696b4a95: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@3cf79205
+2020-05-07 08:52:01.286 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7e0aadd0{/solr,null,UNAVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp}

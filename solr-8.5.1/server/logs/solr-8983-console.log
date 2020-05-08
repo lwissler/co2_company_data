@@ -1,0 +1,12 @@
+2020-05-07 08:52:05.717 INFO  (main) [   ] o.e.j.u.log Logging initialized @1204ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-07 08:52:05.859 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+8-LTS
+2020-05-07 08:52:05.873 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/solr/solr-8.5.1/server/contexts/] at interval 0
+2020-05-07 08:52:06.167 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-05-07 08:52:06.186 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-05-07 08:52:06.187 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-05-07 08:52:06.189 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-05-07 08:52:06.236 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-05-07 08:52:06.240 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
+2020-05-07 08:52:06.240 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-05-07 08:52:06.240 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\solr\solr-8.5.1
+2020-05-07 08:52:06.240 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-05-07T08:52:06.240260400Z

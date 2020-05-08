@@ -1,0 +1,253 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff95ec7ae4e, pid=48056, tid=48160
+#
+# JRE version:  (14.0+36) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (14+36-1461, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x28ae4e]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: org.apache.hadoop.util.PlatformName
+
+Host: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, 12 cores, 63G,  Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+Time: Mon May  4 12:22:25 2020 ope elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001b640f11000):  JavaThread "Unknown thread" [_thread_in_vm, id=48160, stack(0x0000005668a00000,0x0000005668b00000)]
+
+Stack: [0x0000005668a00000,0x0000005668b00000],  sp=0x0000005668aff4d0,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x28ae4e]
+V  [jvm.dll+0x28b285]
+V  [jvm.dll+0x5a7f39]
+V  [jvm.dll+0x5a8109]
+V  [jvm.dll+0x5a79ab]
+V  [jvm.dll+0x5a2245]
+V  [jvm.dll+0x71f74b]
+V  [jvm.dll+0x321c24]
+V  [jvm.dll+0x700aec]
+V  [jvm.dll+0x392ddf]
+V  [jvm.dll+0x394e51]
+C  [jli.dll+0x523b]
+C  [ucrtbase.dll+0x1d9f2]
+C  [KERNEL32.DLL+0x17bd4]
+C  [ntdll.dll+0x6cee1]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000143c7727038c, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x00007ff95f238a01
+RSP=0x0000005668aff4d0, RBP=0x0000000000000001, RSI=0x0000000800a96f30, RDI=0x0000000000000000
+R8 =0x0000000000000001, R9 =0x0000000000000001, R10=0x000001b679093f60, R11=0x0000005668aff400
+R12=0x0000000000000000, R13=0x000001b63ec9b470, R14=0x0000000000000001, R15=0x0000005668affd28
+RIP=0x00007ff95ec7ae4e, EFLAGS=0x0000000000010246
+
+Top of Stack: (sp=0x0000005668aff4d0)
+0x0000005668aff4d0:   000001b60000000d 000000000000000d
+0x0000005668aff4e0:   0000000000010000 00007ff9cf3d5200
+0x0000005668aff4f0:   0000000000000100 00007ff9cf41493e
+0x0000005668aff500:   0000000000000003 0000000800000000
+0x0000005668aff510:   0000143c7727030c 0000000000000000
+0x0000005668aff520:   0000143c7727038c 0000000800000000
+0x0000005668aff530:   0000000000000000 00007ff95ec7b285
+0x0000005668aff540:   00000000000000d8 0000000000000000
+0x0000005668aff550:   0000000000000000 000001b6765cb2b0
+0x0000005668aff560:   0000000800a96f28 0000000000000001
+0x0000005668aff570:   0000000000000004 0000005668aff6f0
+0x0000005668aff580:   0000000000000000 0000000000000000
+0x0000005668aff590:   0000000000000000 0000000000000000
+0x0000005668aff5a0:   ffffffff45524a00 313634312d363300
+0x0000005668aff5b0:   0000143c7727021c 0000000800000000
+0x0000005668aff5c0:   000001b63ec9b470 0000000800000000 
+
+Instructions: (pc=0x00007ff95ec7ae4e)
+0x00007ff95ec7ad4e:   ff 85 d2 44 0f 4f c2 49 63 d0 41 b8 02 00 00 00
+0x00007ff95ec7ad5e:   48 83 c2 0f 48 c1 ea 03 48 63 d2 e8 12 61 31 00
+0x00007ff95ec7ad6e:   48 8b d8 48 85 c0 74 0b 89 38 eb 09 41 c6 04 24
+0x00007ff95ec7ad7e:   02 eb 1b 33 db 4c 63 84 24 80 00 00 00 48 8d 4b
+0x00007ff95ec7ad8e:   04 48 8b d5 e8 3f a0 50 00 49 89 5c 24 20 48 8b
+0x00007ff95ec7ad9e:   9c 24 88 00 00 00 49 83 3e 00 74 15 48 8b 54 24
+0x00007ff95ec7adae:   28 48 8b ce e8 d9 16 e2 ff 49 8b ce e8 41 16 e2
+0x00007ff95ec7adbe:   ff 48 89 5e 20 48 8b 5c 24 70 4c 89 76 10 4c 89
+0x00007ff95ec7adce:   6e 18 48 83 c4 30 41 5f 41 5e 41 5d 41 5c 5f 5e
+0x00007ff95ec7adde:   5d c3 40 53 48 83 ec 20 48 8b 59 28 e8 b1 cc 36
+0x00007ff95ec7adee:   00 ff c8 48 63 c8 48 8d 04 19 48 f7 d1 48 23 c1
+0x00007ff95ec7adfe:   48 83 c4 20 5b c3 cc cc cc cc cc cc cc cc cc cc
+0x00007ff95ec7ae0e:   cc cc 48 89 5c 24 10 48 89 6c 24 18 48 89 74 24
+0x00007ff95ec7ae1e:   20 57 48 83 ec 60 48 8b 05 ed 99 76 00 48 33 c4
+0x00007ff95ec7ae2e:   48 89 44 24 50 80 3d 28 6c 73 00 00 0f b6 ea 48
+0x00007ff95ec7ae3e:   8b f1 74 17 80 39 00 75 12 48 8b 0d 8a 48 79 00
+0x00007ff95ec7ae4e:   48 8b 01 ff 50 20 48 8b d8 eb 08 48 8b 59 18 48
+0x00007ff95ec7ae5e:   83 c3 04 48 83 3d 67 49 79 00 00 40 b7 01 74 0f
+0x00007ff95ec7ae6e:   48 8b d3 48 8d 0d 90 d8 5b 00 e8 83 53 f3 ff 48
+0x00007ff95ec7ae7e:   8d 54 24 20 48 8b cb e8 16 c1 36 00 85 c0 74 19
+0x00007ff95ec7ae8e:   40 84 ed 74 14 48 8b d3 48 8d 0d 93 d8 5b 00 e8
+0x00007ff95ec7ae9e:   0e de ff ff 40 32 ff eb 78 80 3e 03 75 20 48 8b
+0x00007ff95ec7aeae:   cb e8 7c 6d 36 00 84 c0 75 67 48 8b d3 48 8d 0d
+0x00007ff95ec7aebe:   9e d8 5b 00 e8 e9 dd ff ff 40 32 ff eb 53 48 8b
+0x00007ff95ec7aece:   56 08 4c 8b 44 24 40 48 85 d2 74 05 49 3b d0 75
+0x00007ff95ec7aede:   09 8b 44 24 34 39 46 10 74 37 40 32 ff 40 38 3d
+0x00007ff95ec7aeee:   63 63 7b 00 74 1c 49 3b d0 48 8d 05 82 d8 5b 00
+0x00007ff95ec7aefe:   48 8d 0d 93 d8 5b 00 48 0f 45 c8 e8 a2 dd ff ff
+0x00007ff95ec7af0e:   eb 0f 48 8b d3 48 8d 0d 96 d8 5b 00 e8 91 dd ff
+0x00007ff95ec7af1e:   ff 80 3d 2f 63 7b 00 00 74 10 40 84 ff 75 0b c6
+0x00007ff95ec7af2e:   05 25 b2 7c 00 01 b0 01 eb 04 40 0f b6 c7 48 8b
+0x00007ff95ec7af3e:   4c 24 50 48 33 cc e8 f7 87 50 00 4c 8d 5c 24 60 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff95f474078, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001b640fce800 GCTaskThread "GC Thread#0" [stack: 0x0000005668b00000,0x0000005668c00000] [id=13748]
+  0x000001b676402000 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000005668c00000,0x0000005668d00000] [id=45248]
+  0x000001b676404800 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000005668d00000,0x0000005668e00000] [id=44104]
+  0x000001b6765c6000 ConcurrentGCThread "G1 Refine#0" [stack: 0x0000005668e00000,0x0000005668f00000] [id=8096]
+  0x000001b6765c7000 ConcurrentGCThread "G1 Young RemSet Sampling" [stack: 0x0000005668f00000,0x0000005669000000] [id=46324]
+
+=>0x000001b640f11000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=48160, stack(0x0000005668a00000,0x0000005668b00000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000404000000, size: 16320 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (2 events):
+Event: 0.044 Loaded shared library C:\Program Files\Java\jdk-14\bin\java.dll
+Event: 0.057 Loaded shared library C:\Program Files\Java\jdk-14\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff78a7d0000 - 0x00007ff78a7df000 	C:\Program Files\Java\jdk-14\bin\java.exe
+0x00007ff9d1760000 - 0x00007ff9d1950000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ff9d0320000 - 0x00007ff9d03d2000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ff9cf3b0000 - 0x00007ff9cf653000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ff9ce790000 - 0x00007ff9ce88a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff9bb1f0000 - 0x00007ff9bb208000 	C:\Program Files\Java\jdk-14\bin\jli.dll
+0x00007ff9d1260000 - 0x00007ff9d1303000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ff9d0680000 - 0x00007ff9d071e000 	C:\Windows\System32\msvcrt.dll
+0x00007ff9d0bb0000 - 0x00007ff9d0c47000 	C:\Windows\System32\sechost.dll
+0x00007ff9d1540000 - 0x00007ff9d1660000 	C:\Windows\System32\RPCRT4.dll
+0x00007ff9d0c50000 - 0x00007ff9d0de3000 	C:\Windows\System32\USER32.dll
+0x00007ff9a36e0000 - 0x00007ff9a36f5000 	C:\Program Files\Java\jdk-14\bin\VCRUNTIME140.dll
+0x00007ff9cf010000 - 0x00007ff9cf031000 	C:\Windows\System32\win32u.dll
+0x00007ff9d00c0000 - 0x00007ff9d00e6000 	C:\Windows\System32\GDI32.dll
+0x00007ff9bda20000 - 0x00007ff9bdca5000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.329_none_e6c7b0c7130c72de\COMCTL32.dll
+0x00007ff9cf1f0000 - 0x00007ff9cf384000 	C:\Windows\System32\gdi32full.dll
+0x00007ff9d07a0000 - 0x00007ff9d0ad6000 	C:\Windows\System32\combase.dll
+0x00007ff9ce6f0000 - 0x00007ff9ce78e000 	C:\Windows\System32\msvcp_win.dll
+0x00007ff9cf710000 - 0x00007ff9cf790000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff9bea40000 - 0x00007ff9bea4a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ff9d1510000 - 0x00007ff9d153e000 	C:\Windows\System32\IMM32.DLL
+0x00007ff99a960000 - 0x00007ff99a9fb000 	C:\Program Files\Java\jdk-14\bin\msvcp140.dll
+0x00007ff95e9f0000 - 0x00007ff95f50f000 	C:\Program Files\Java\jdk-14\bin\server\jvm.dll
+0x00007ff9d1710000 - 0x00007ff9d1718000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff9c6800000 - 0x00007ff9c6824000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff9ac980000 - 0x00007ff9ac989000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ff9d0460000 - 0x00007ff9d04cf000 	C:\Windows\System32\WS2_32.dll
+0x00007ff9c67d0000 - 0x00007ff9c67fd000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ff9cf7c0000 - 0x00007ff9cf80a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ff9ce6d0000 - 0x00007ff9ce6e1000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ff9b6370000 - 0x00007ff9b637a000 	C:\Program Files\Java\jdk-14\bin\jimage.dll
+0x00007ff9ccff0000 - 0x00007ff9cd1e4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff9b3240000 - 0x00007ff9b326a000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ff9a2510000 - 0x00007ff9a2535000 	C:\Program Files\Java\jdk-14\bin\java.dll
+0x00007ff9a3020000 - 0x00007ff9a3037000 	C:\Program Files\Java\jdk-14\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-14\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.329_none_e6c7b0c7130c72de;C:\Program Files\Java\jdk-14\bin\server
+
+VM Arguments:
+java_command: org.apache.hadoop.util.PlatformName
+java_class_path (initial): D:\nutch\apache-nutch-1.16;D:\nutch\apache-nutch-1.16\conf;C;D:\Program Files\Java\jdk-14\lib\tools.jar;D:\nutch\apache-nutch-1.16\lib\activation-1.1.jar;D:\nutch\apache-nutch-1.16\lib\amqp-client-5.2.0.jar;D:\nutch\apache-nutch-1.16\lib\animal-sniffer-annotations-1.14.jar;D:\nutch\apache-nutch-1.16\lib\antlr4-4.5.1.jar;D:\nutch\apache-nutch-1.16\lib\antlr-runtime-3.5.2.jar;D:\nutch\apache-nutch-1.16\lib\aopalliance-1.0.jar;D:\nutch\apache-nutch-1.16\lib\apacheds-i18n-2.0.0-M15.jar;D:\nutch\apache-nutch-1.16\lib\apacheds-kerberos-codec-2.0.0-M15.jar;D:\nutch\apache-nutch-1.16\lib\apache-nutch-1.16.jar;D:\nutch\apache-nutch-1.16\lib\api-asn1-api-1.0.0-M20.jar;D:\nutch\apache-nutch-1.16\lib\api-util-1.0.0-M20.jar;D:\nutch\apache-nutch-1.16\lib\args4j-2.0.16.jar;D:\nutch\apache-nutch-1.16\lib\asciitable-0.3.2.jar;D:\nutch\apache-nutch-1.16\lib\ascii-utf-themes-0.0.1.jar;D:\nutch\apache-nutch-1.16\lib\asm-3.3.1.jar;D:\nutch\apache-nutch-1.16\lib\asm-7.1.jar;D:\nutch\apache-nutch-1.16\lib\avro-1.7.7.jar;D:\nutch\apache-nutch-1.16\lib\bootstrap-3.0.3.jar;D:\nutch\apache-nutch-1.16\lib\cglib-2.2.1-v20090111.jar;D:\nutch\apache-nutch-1.16\lib\cglib-2.2.2.jar;D:\nutch\apache-nutch-1.16\lib\char-translation-0.0.2.jar;D:\nutch\apache-nutch-1.16\lib\checker-compat-qual-2.0.0.jar;D:\nutch\apache-nutch-1.16\lib\closure-compiler-v20130603.jar;D:\nutch\apache-nutch-1.16\lib\commons-beanutils-1.7.0.jar;D:\nutch\apache-nutch-1.16\lib\commons-beanutils-core-1.8.0.jar;D:\nutch\apache-nutch-1.16\lib\commons-cli-1.2.jar;D:\nutch\apache-nutch-1.16\lib\commons-codec-1.11.jar;D:\nutch\apache-nutch-1.16\lib\commons-collections-3.2.2.jar;D:\nutch\apache-nutch-1.16\lib\commons-collections4-4.2.jar;D:\nutch\apache-nutch-1.16\lib\commons-compress-1.18.jar;D:\nutch\apache-nutch-1.16\lib\commons-configuration-1.6.jar;D:\nutch\apache-nutch-1.16\lib\commons-daemon-1.0.13.jar;D:\nutch\apache-nutch-1.16\lib\commons-digester-1.8.jar;D:\nutch\apache-nutch-1.16\lib\commons-ht
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 4194304                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 1069547520                                {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 17112760320                               {product} {ergonomic}
+   size_t MaxNewSize                               = 10267656192                               {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 4194304                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 17112760320                            {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-14
+JRE_HOME=C:\Program Files\Java\jre1.8.0_241
+PATH=C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-14\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Users\Ich\AppData\Local\Microsoft\WindowsApps;C:\Users\Ich\AppData\Roaming\npm;C:\Program Files\Java\jdk-14\bin;C:\Users\Ich\AppData\Local\GitHubDesktop\bin
+USERNAME=Ich
+SHELL=/bin/bash
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+OS uptime: 2 days 3:41 hours
+
+CPU:total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 158 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 65270M (42509M free)
+TotalPageFile size 74998M (AvailPageFile size 41476M)
+current process WorkingSet (physical memory assigned to process): 15M, peak: 15M
+current process commit charge ("private bytes"): 1138M, peak: 1138M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (14+36-1461) for windows-amd64 JRE (14+36-1461), built on Feb  6 2020 19:08:04 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.

@@ -1,0 +1,364 @@
+2020-05-06 11:50:22.980 INFO  (main) [   ] o.e.j.u.log Logging initialized @1168ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-06 11:50:23.114 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+8-LTS
+2020-05-06 11:50:23.127 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/solr/solr-8.5.1/server/contexts/] at interval 0
+2020-05-06 11:50:23.396 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-05-06 11:50:23.403 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-05-06 11:50:23.403 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-05-06 11:50:23.405 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-05-06 11:50:23.463 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-05-06 11:50:23.466 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.1
+2020-05-06 11:50:23.469 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 7574
+2020-05-06 11:50:23.469 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\solr\solr-8.5.1
+2020-05-06 11:50:23.469 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-05-06T11:50:23.469676400Z
+2020-05-06 11:50:23.496 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\solr\solr-8.5.1\example\cloud\node2\solr
+2020-05-06 11:50:23.534 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2020-05-06 11:50:23.555 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2020-05-06 11:50:23.555 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2020-05-06 11:50:23.662 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2020-05-06 11:50:23.664 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\solr\solr-8.5.1\example\cloud\node2\solr\solr.xml
+2020-05-06 11:50:23.712 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8, but no JMX reporters were configured - adding default JMX reporter.
+2020-05-06 11:50:24.504 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-05-06 11:50:24.691 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@e042c99[provider=null,keyStore=null,trustStore=null]
+2020-05-06 11:50:24.691 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@e042c99[provider=null,keyStore=null,trustStore=null]
+2020-05-06 11:50:24.824 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@17fa1336[provider=null,keyStore=null,trustStore=null]
+2020-05-06 11:50:24.824 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@17fa1336[provider=null,keyStore=null,trustStore=null]
+2020-05-06 11:50:24.831 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2020-05-06 11:50:24.844 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2020-05-06 11:50:24.855 INFO  (zkConnectionManagerCallback-9-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2020-05-06 11:50:24.855 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2020-05-06 11:50:24.880 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2020-05-06 11:50:24.914 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.178.52:7574_solr as DOWN
+2020-05-06 11:50:24.925 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-05-06 11:50:24.925 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.178.52:7574_solr
+2020-05-06 11:50:24.939 INFO  (zkCallback-8-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2020-05-06 11:50:24.965 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2020-05-06 11:50:24.975 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-05-06 11:50:25.065 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-05-06 11:50:25.121 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:25.121 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:25.125 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:25.146 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath D:\solr\solr-8.5.1\example\cloud\node2\solr
+2020-05-06 11:50:25.448 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@70925b45{/solr,file:///D:/solr/solr-8.5.1/server/solr-webapp/webapp/,AVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp}
+2020-05-06 11:50:25.458 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@7fc44dec{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:7574}
+2020-05-06 11:50:25.458 INFO  (main) [   ] o.e.j.s.Server Started @3647ms
+2020-05-06 11:50:25.558 INFO  (qtp151442075-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=40
+2020-05-06 11:50:25.585 INFO  (qtp151442075-19) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json and sendToOCPQueue=true
+2020-05-06 11:50:25.587 INFO  (qtp151442075-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=3
+2020-05-06 11:50:25.881 INFO  (qtp151442075-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2020-05-06 11:50:25.885 INFO  (qtp151442075-25) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json and sendToOCPQueue=true
+2020-05-06 11:50:25.887 INFO  (qtp151442075-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=1
+2020-05-06 11:50:26.831 INFO  (qtp151442075-22) [   x:gettingstarted_shard1_replica_n2] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node5&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard1_replica_n2&action=CREATE&numShards=2&collection=gettingstarted&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2020-05-06 11:50:26.831 INFO  (qtp151442075-18) [   x:gettingstarted_shard2_replica_n6] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node8&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard2_replica_n6&action=CREATE&numShards=2&collection=gettingstarted&shard=shard2&wt=javabin&version=2&replicaType=NRT
+2020-05-06 11:50:26.906 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2020-05-06 11:50:26.906 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2020-05-06 11:50:27.157 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.IndexSchema [gettingstarted_shard1_replica_n2] Schema name=default-config
+2020-05-06 11:50:27.160 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.IndexSchema [gettingstarted_shard2_replica_n6] Schema name=default-config
+2020-05-06 11:50:27.965 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-06 11:50:27.965 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-06 11:50:28.079 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'gettingstarted_shard1_replica_n2' using configuration from configset gettingstarted, trusted=true
+2020-05-06 11:50:28.081 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'gettingstarted_shard2_replica_n6' using configuration from configset gettingstarted, trusted=true
+2020-05-06 11:50:28.091 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard1.replica_n2' (registry 'solr.core.gettingstarted.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:28.091 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard2.replica_n6' (registry 'solr.core.gettingstarted.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:28.121 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [[gettingstarted_shard1_replica_n2] ] Opening new SolrCore at [D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n2], dataDir=[D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n2\data\]
+2020-05-06 11:50:28.121 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [[gettingstarted_shard2_replica_n6] ] Opening new SolrCore at [D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n6], dataDir=[D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n6\data\]
+2020-05-06 11:50:29.157 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-06 11:50:29.157 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-06 11:50:29.157 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-06 11:50:29.157 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-06 11:50:29.175 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-06 11:50:29.175 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-06 11:50:29.175 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-06 11:50:29.175 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-06 11:50:29.209 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.SolrIndexSearcher Opening [Searcher@69359e2a[gettingstarted_shard1_replica_n2] main]
+2020-05-06 11:50:29.209 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.SolrIndexSearcher Opening [Searcher@4938d0b4[gettingstarted_shard2_replica_n6] main]
+2020-05-06 11:50:29.227 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2020-05-06 11:50:29.227 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2020-05-06 11:50:29.245 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2020-05-06 11:50:29.245 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2020-05-06 11:50:29.249 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2020-05-06 11:50:29.249 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2020-05-06 11:50:29.251 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2020-05-06 11:50:29.251 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2020-05-06 11:50:29.264 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-06 11:50:29.264 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-06 11:50:29.276 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-06 11:50:29.276 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-06 11:50:29.293 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-06 11:50:29.293 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-06 11:50:29.300 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1665941718224076800
+2020-05-06 11:50:29.300 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1665941718224076800
+2020-05-06 11:50:29.315 INFO  (searcherExecutor-10-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@69359e2a[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:29.315 INFO  (searcherExecutor-11-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4938d0b4[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:29.315 INFO  (searcherExecutor-11-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:29.315 INFO  (searcherExecutor-11-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-06 11:50:29.316 INFO  (searcherExecutor-10-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:29.316 INFO  (searcherExecutor-10-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-06 11:50:29.331 INFO  (searcherExecutor-11-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n6] Registered new searcher Searcher@4938d0b4[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:29.331 INFO  (searcherExecutor-10-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2] Registered new searcher Searcher@69359e2a[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:29.354 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard1 to Terms{values={core_node3=0, core_node5=0}, version=1}
+2020-05-06 11:50:29.373 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard2 to Terms{values={core_node7=0, core_node8=0}, version=1}
+2020-05-06 11:50:29.379 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/gettingstarted/leaders/shard1
+2020-05-06 11:50:29.379 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/gettingstarted/leaders/shard2
+2020-05-06 11:50:29.896 INFO  (qtp151442075-23) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/get params={distrib=false&qt=/get&fingerprint=false&getVersions=100&wt=javabin&version=2} status=0 QTime=4
+2020-05-06 11:50:29.896 INFO  (qtp151442075-53) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/get params={distrib=false&qt=/get&fingerprint=false&getVersions=100&wt=javabin&version=2} status=0 QTime=4
+2020-05-06 11:50:30.401 INFO  (qtp151442075-22) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node5&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard1_replica_n2&action=CREATE&numShards=2&collection=gettingstarted&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=3570
+2020-05-06 11:50:30.401 INFO  (qtp151442075-18) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node8&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard2_replica_n6&action=CREATE&numShards=2&collection=gettingstarted&shard=shard2&wt=javabin&version=2&replicaType=NRT} status=0 QTime=3571
+2020-05-06 11:50:30.504 INFO  (zkCallback-8-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2020-05-06 11:50:30.504 INFO  (zkCallback-8-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2020-05-06 11:50:30.633 INFO  (Thread-16) [   ] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard2_replica_n6
+2020-05-06 11:50:30.635 INFO  (Thread-16) [   ] o.a.s.c.SolrCore core reload gettingstarted_shard2_replica_n6
+2020-05-06 11:50:30.659 INFO  (Thread-16) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2020-05-06 11:50:30.700 INFO  (Thread-16) [   ] o.a.s.s.IndexSchema [gettingstarted_shard2_replica_n6] Schema name=default-config
+2020-05-06 11:50:30.745 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.745 INFO  (qtp151442075-24) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.746 INFO  (qtp151442075-24) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=4
+2020-05-06 11:50:30.747 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=3
+2020-05-06 11:50:30.749 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:30.749 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Trying to update my configs
+2020-05-06 11:50:30.749 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard1_replica_n2
+2020-05-06 11:50:30.750 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore core reload gettingstarted_shard1_replica_n2
+2020-05-06 11:50:30.773 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.1
+2020-05-06 11:50:30.816 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.IndexSchema [gettingstarted_shard1_replica_n2] Schema name=default-config
+2020-05-06 11:50:30.853 INFO  (qtp151442075-52) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.854 INFO  (qtp151442075-52) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:30.855 INFO  (qtp151442075-20) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.855 INFO  (qtp151442075-20) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:30.855 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:30.856 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:30.960 INFO  (qtp151442075-24) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.960 INFO  (qtp151442075-24) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:30.961 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:30.961 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:30.964 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:30.965 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:30.991 INFO  (Thread-16) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-06 11:50:31.065 INFO  (qtp151442075-20) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.065 INFO  (qtp151442075-20) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=1
+2020-05-06 11:50:31.069 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.071 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.071 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.073 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.075 INFO  (Thread-16) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'gettingstarted_shard2_replica_n6' using configuration from configset gettingstarted
+2020-05-06 11:50:31.109 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-06 11:50:31.118 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard2.replica_n6' (registry 'solr.core.gettingstarted.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:31.119 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [[gettingstarted_shard2_replica_n6] ] Opening new SolrCore at [D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n6], dataDir=[D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n6\data\]
+2020-05-06 11:50:31.183 INFO  (qtp151442075-25) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.183 INFO  (qtp151442075-25) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.193 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.207 INFO  (qtp151442075-20) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.207 INFO  (qtp151442075-20) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.208 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.260 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-06 11:50:31.260 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2020-05-06 11:50:31.273 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.SolrIndexSearcher Opening [Searcher@1df2ee86[gettingstarted_shard2_replica_n6] main]
+2020-05-06 11:50:31.285 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2020-05-06 11:50:31.287 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2020-05-06 11:50:31.287 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2020-05-06 11:50:31.289 INFO  (qtp151442075-25) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.289 INFO  (qtp151442075-25) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.292 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2020-05-06 11:50:31.293 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-06 11:50:31.293 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-06 11:50:31.294 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-06 11:50:31.295 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1665941720315985920
+2020-05-06 11:50:31.296 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.303 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1df2ee86[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.303 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:31.303 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-06 11:50:31.308 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-06 11:50:31.312 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n6] Registered new searcher Searcher@1df2ee86[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.313 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.s.SolrIndexSearcher Opening [Searcher@61ed995b[gettingstarted_shard2_replica_n6] main]
+2020-05-06 11:50:31.314 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.314 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.315 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.316 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@390918e8
+2020-05-06 11:50:31.316 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard2.replica_n6, tag=SolrCore@390918e8
+2020-05-06 11:50:31.317 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@f34339f: rootName = null, domain = solr.core.gettingstarted.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.gettingstarted.shard2.replica_n6 / com.codahale.metrics.MetricRegistry@71c81209
+2020-05-06 11:50:31.318 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@61ed995b[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.318 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:31.323 INFO  (searcherExecutor-20-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard2_replica_n6 c:gettingstarted s:shard2 r:core_node8) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n6] Registered new searcher Searcher@61ed995b[gettingstarted_shard2_replica_n6] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.325 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard2.leader, tag=SolrCore@390918e8
+2020-05-06 11:50:31.330 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'gettingstarted_shard1_replica_n2' using configuration from configset gettingstarted
+2020-05-06 11:50:31.331 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard1_replica_n2
+2020-05-06 11:50:31.332 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore core reload gettingstarted_shard1_replica_n2
+2020-05-06 11:50:31.332 INFO  (Thread-16) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore Another reload is in progress. Not doing anything.
+2020-05-06 11:50:31.355 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard1.replica_n2' (registry 'solr.core.gettingstarted.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@41294f8
+2020-05-06 11:50:31.355 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [[gettingstarted_shard1_replica_n2] ] Opening new SolrCore at [D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n2], dataDir=[D:\solr\solr-8.5.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n2\data\]
+2020-05-06 11:50:31.395 INFO  (qtp151442075-20) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2020-05-06 11:50:31.395 INFO  (qtp151442075-20) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2020-05-06 11:50:31.395 INFO  (qtp151442075-20) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.S.Request [gettingstarted_shard2_replica_n6]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.407 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-06 11:50:31.407 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2020-05-06 11:50:31.410 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.SolrIndexSearcher Opening [Searcher@9661420[gettingstarted_shard1_replica_n2] main]
+2020-05-06 11:50:31.411 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2020-05-06 11:50:31.412 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2020-05-06 11:50:31.412 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2020-05-06 11:50:31.413 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2020-05-06 11:50:31.413 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-06 11:50:31.413 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-06 11:50:31.414 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-06 11:50:31.414 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1665941720440766464
+2020-05-06 11:50:31.418 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@9661420[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.418 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:31.418 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-06 11:50:31.421 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2020-05-06 11:50:31.421 INFO  (qtp151442075-25) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:50:31.421 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2020-05-06 11:50:31.422 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-06 11:50:31.425 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2] Registered new searcher Searcher@9661420[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.426 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.SolrIndexSearcher Opening [Searcher@6c3539f6[gettingstarted_shard1_replica_n2] main]
+2020-05-06 11:50:31.426 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@70556cfa
+2020-05-06 11:50:31.426 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard1.replica_n2, tag=SolrCore@70556cfa
+2020-05-06 11:50:31.426 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@795718ed: rootName = null, domain = solr.core.gettingstarted.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.gettingstarted.shard1.replica_n2 / com.codahale.metrics.MetricRegistry@6b2d0f65
+2020-05-06 11:50:31.426 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6c3539f6[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.426 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-06 11:50:31.429 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard1.leader, tag=SolrCore@70556cfa
+2020-05-06 11:50:31.431 INFO  (searcherExecutor-24-thread-1-processing-n:192.168.178.52:7574_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2] Registered new searcher Searcher@6c3539f6[gettingstarted_shard1_replica_n2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-06 11:50:31.524 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2020-05-06 11:50:31.524 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2020-05-06 11:50:31.524 INFO  (qtp151442075-52) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.S.Request [gettingstarted_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2020-05-06 11:51:18.705 INFO  (qtp151442075-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.core.gettingstarted.shard2.replica_n6:UPDATE./update.requests&key=solr.core.gettingstarted.shard1.replica_n2:UPDATE./update.requests&key=solr.core.gettingstarted.shard1.replica_n2:QUERY./select.requests&key=solr.core.gettingstarted.shard2.replica_n6:QUERY./select.requests&key=solr.core.gettingstarted.shard1.replica_n2:INDEX.sizeInBytes&key=solr.core.gettingstarted.shard2.replica_n6:INDEX.sizeInBytes} status=0 QTime=2
+2020-05-06 11:51:18.723 INFO  (qtp151442075-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=12
+2020-05-06 11:52:18.770 INFO  (qtp151442075-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.core.gettingstarted.shard2.replica_n6:UPDATE./update.requests&key=solr.core.gettingstarted.shard1.replica_n2:UPDATE./update.requests&key=solr.core.gettingstarted.shard1.replica_n2:QUERY./select.requests&key=solr.core.gettingstarted.shard2.replica_n6:QUERY./select.requests&key=solr.core.gettingstarted.shard1.replica_n2:INDEX.sizeInBytes&key=solr.core.gettingstarted.shard2.replica_n6:INDEX.sizeInBytes} status=0 QTime=1
+2020-05-06 11:52:18.783 INFO  (qtp151442075-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/metrics params={wt=javabin&version=2&key=solr.jvm:os.processCpuLoad&key=solr.node:CONTAINER.fs.coreRoot.usableSpace&key=solr.jvm:os.systemLoadAverage&key=solr.jvm:memory.heap.used} status=0 QTime=11
+2020-05-06 11:53:07.898 INFO  (zkCallback-8-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2020-05-06 11:53:07.898 INFO  (zkCallback-8-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2020-05-06 11:53:07.924 INFO  (zkCallback-8-thread-4) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2020-05-06 11:53:07.924 INFO  (zkCallback-8-thread-3) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.178.52:7574_solr
+2020-05-06 11:53:07.928 INFO  (zkCallback-8-thread-3) [   ] o.a.s.c.Overseer Overseer (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) starting
+2020-05-06 11:53:07.930 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2020-05-06 11:53:07.930 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2020-05-06 11:53:07.970 INFO  (OverseerStateUpdate-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.178.52:7574_solr
+2020-05-06 11:53:07.981 INFO  (zkCallback-8-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2020-05-06 11:53:07.981 INFO  (zkCallback-8-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2020-05-06 11:53:08.369 WARN  (main-SendThread(localhost:9983)) [   ] o.a.z.ClientCnxn Session 0x100098b74aa0002 for server localhost/127.0.0.1:9983, unexpected error, closing socket connection and attempting reconnect => java.io.IOException: Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+java.io.IOException: Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:75) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1223) ~[?:?]
+2020-05-06 11:53:08.470 WARN  (zkConnectionManagerCallback-9-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@1f346ad2 name: ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path: null type: None
+2020-05-06 11:53:08.471 WARN  (zkConnectionManagerCallback-9-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+2020-05-06 11:53:10.431 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy Sync replicas to http://192.168.178.52:7574/solr/gettingstarted_shard1_replica_n2/
+2020-05-06 11:53:10.431 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SyncStrategy Sync replicas to http://192.168.178.52:7574/solr/gettingstarted_shard2_replica_n6/
+2020-05-06 11:53:10.432 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2020-05-06 11:53:10.432 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2020-05-06 11:53:10.432 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SyncStrategy http://192.168.178.52:7574/solr/gettingstarted_shard2_replica_n6/ has no replicas
+2020-05-06 11:53:10.432 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy http://192.168.178.52:7574/solr/gettingstarted_shard1_replica_n2/ has no replicas
+2020-05-06 11:53:10.434 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/gettingstarted/leaders/shard1/leader after winning as /collections/gettingstarted/leader_elect/shard1/election/72068088600330242-core_node5-n_0000000001
+2020-05-06 11:53:10.434 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/gettingstarted/leaders/shard2/leader after winning as /collections/gettingstarted/leader_elect/shard2/election/72068088600330242-core_node8-n_0000000001
+2020-05-06 11:53:38.020 ERROR (OverseerStateUpdate-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.Overseer Exception in Overseer main queue loop => org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /collections/gettingstarted/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /collections/gettingstarted/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2021) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$exists$3(SolrZkClient.java:314) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:314) ~[?:?]
+	at org.apache.solr.cloud.overseer.ZkStateWriter.writePendingUpdates(ZkStateWriter.java:197) ~[?:?]
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.run(Overseer.java:259) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2020-05-06 11:53:42.019 ERROR (OverseerCollectionConfigSetProcessor-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.OverseerTaskProcessor  => org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:2131) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$getData$5(SolrZkClient.java:338) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:338) ~[?:?]
+	at org.apache.solr.cloud.OverseerTaskProcessor.amILeader(OverseerTaskProcessor.java:424) ~[?:?]
+	at org.apache.solr.cloud.OverseerTaskProcessor.run(OverseerTaskProcessor.java:203) ~[?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2020-05-06 11:53:42.020 ERROR (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext There was a problem trying to register as the leader:org.apache.solr.common.SolrException: Could not register as the leader because creating the ephemeral registration node in ZooKeeper failed
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.runLeaderProcess(ElectionContext.java:228)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ElectionContext.java:479)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:137)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:57)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:350)
+	at org.apache.solr.common.cloud.SolrZkClient$ProcessWatchWithExecutor.lambda$process$1(SolrZkClient.java:850)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.ZooKeeper.multiInternal(ZooKeeper.java:1911)
+	at org.apache.zookeeper.ZooKeeper.multi(ZooKeeper.java:1830)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$multi$10(SolrZkClient.java:588)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.multi(SolrZkClient.java:588)
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.lambda$runLeaderProcess$0(ElectionContext.java:209)
+	at org.apache.solr.common.util.RetryUtil.retryOnThrowable(RetryUtil.java:48)
+	at org.apache.solr.common.util.RetryUtil.retryOnThrowable(RetryUtil.java:41)
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.runLeaderProcess(ElectionContext.java:194)
+	... 12 more
+
+2020-05-06 11:53:42.020 ERROR (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext There was a problem trying to register as the leader:org.apache.solr.common.SolrException: Could not register as the leader because creating the ephemeral registration node in ZooKeeper failed
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.runLeaderProcess(ElectionContext.java:228)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ElectionContext.java:479)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:172)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:137)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:57)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:350)
+	at org.apache.solr.common.cloud.SolrZkClient$ProcessWatchWithExecutor.lambda$process$1(SolrZkClient.java:850)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:210)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.ZooKeeper.multiInternal(ZooKeeper.java:1911)
+	at org.apache.zookeeper.ZooKeeper.multi(ZooKeeper.java:1830)
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$multi$10(SolrZkClient.java:588)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:71)
+	at org.apache.solr.common.cloud.SolrZkClient.multi(SolrZkClient.java:588)
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.lambda$runLeaderProcess$0(ElectionContext.java:209)
+	at org.apache.solr.common.util.RetryUtil.retryOnThrowable(RetryUtil.java:48)
+	at org.apache.solr.common.util.RetryUtil.retryOnThrowable(RetryUtil.java:41)
+	at org.apache.solr.cloud.ShardLeaderElectionContextBase.runLeaderProcess(ElectionContext.java:194)
+	... 12 more
+
+2020-05-06 11:53:42.020 INFO  (zkCallback-8-thread-5) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext There may be a better leader candidate than us - going back into recovery
+2020-05-06 11:53:42.020 INFO  (zkCallback-8-thread-6) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext There may be a better leader candidate than us - going back into recovery
+2020-05-06 11:53:42.766 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@7fc44dec{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:7574}
+2020-05-06 11:53:42.766 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-05-06 11:53:42.768 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1579584742
+2020-05-06 11:53:42.768 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.178.52:7574_solr
+2020-05-06 11:53:43.520 INFO  (OverseerStateUpdate-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.Overseer According to ZK I (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) am no longer a leader. propsId=null
+2020-05-06 11:53:43.520 INFO  (OverseerStateUpdate-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.178.52:7574_solr
+2020-05-06 11:53:47.180 INFO  (coreCloseExecutor-32-thread-1) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@ffda6c2
+2020-05-06 11:53:47.180 INFO  (coreCloseExecutor-32-thread-2) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@ee202e6
+2020-05-06 11:53:47.180 INFO  (coreCloseExecutor-32-thread-2) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard2.replica_n6, tag=SolrCore@ee202e6
+2020-05-06 11:53:47.181 INFO  (coreCloseExecutor-32-thread-2) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@326f088f: rootName = null, domain = solr.core.gettingstarted.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.gettingstarted.shard2.replica_n6 / com.codahale.metrics.MetricRegistry@71c81209
+2020-05-06 11:53:47.185 INFO  (coreCloseExecutor-32-thread-2) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard2.leader, tag=SolrCore@ee202e6
+2020-05-06 11:53:47.185 INFO  (coreCloseExecutor-32-thread-1) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard1.replica_n2, tag=SolrCore@ffda6c2
+2020-05-06 11:53:47.185 INFO  (coreCloseExecutor-32-thread-1) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5b80d680: rootName = null, domain = solr.core.gettingstarted.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.gettingstarted.shard1.replica_n2 / com.codahale.metrics.MetricRegistry@6b2d0f65
+2020-05-06 11:53:47.190 INFO  (coreCloseExecutor-32-thread-1) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard1.leader, tag=SolrCore@ffda6c2
+2020-05-06 11:53:47.190 INFO  (coreCloseExecutor-32-thread-2) [c:gettingstarted s:shard2 r:core_node8 x:gettingstarted_shard2_replica_n6] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-05-06 11:53:47.193 INFO  (coreCloseExecutor-32-thread-1) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-05-06 11:53:47.197 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-05-06 11:53:47.197 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@40d23c82: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@31e717ab
+2020-05-06 11:53:47.199 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-05-06 11:53:47.199 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@73c3cd09: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@3611da7b
+2020-05-06 11:53:47.199 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-05-06 11:53:47.200 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4a8a0099: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@1f273e62
+2020-05-06 11:53:47.200 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster, tag=null
+2020-05-06 11:53:47.202 INFO  (closeThreadPool-20-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) closing
+2020-05-06 11:53:47.202 INFO  (OverseerAutoScalingTriggerThread-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2020-05-06 11:53:47.204 INFO  (OverseerCollectionConfigSetProcessor-72068088600330242-192.168.178.52:7574_solr-n_0000000001) [   ] o.a.s.c.OverseerTaskProcessor According to ZK I (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) am no longer a leader. propsId=null
+2020-05-06 11:53:47.205 INFO  (closeThreadPool-20-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) closing
+2020-05-06 11:53:49.474 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72068088600330242-192.168.178.52:7574_solr-n_0000000001) closing
+2020-05-06 11:53:49.480 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@70925b45{/solr,null,UNAVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp}

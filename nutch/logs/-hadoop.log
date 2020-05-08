@@ -1,0 +1,735 @@
+2020-05-04 13:41:31,324 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:41:31,391 ERROR conf.Configuration - error parsing conf nutch-site.xml
+com.ctc.wstx.exc.WstxParsingException: Illegal to have multiple roots (start tag in epilog?).
+ at [row,col,system-id]: [8,2,"file:/D:/nutch/apache-nutch-1.16/conf/nutch-site.xml"]
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:621)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:491)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:475)
+	at com.ctc.wstx.sr.BasicStreamReader.handleExtraRoot(BasicStreamReader.java:2242)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2156)
+	at com.ctc.wstx.sr.BasicStreamReader.closeContentTree(BasicStreamReader.java:2991)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2734)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1123)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2796)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2730)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2605)
+	at org.apache.hadoop.conf.Configuration.set(Configuration.java:1269)
+	at org.apache.hadoop.util.GenericOptionsParser.processGeneralOptions(GenericOptionsParser.java:310)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:572)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 13:42:50,635 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:42:50,669 ERROR conf.Configuration - error parsing conf nutch-site.xml
+com.ctc.wstx.exc.WstxParsingException: Illegal to have multiple roots (start tag in epilog?).
+ at [row,col,system-id]: [9,2,"file:/D:/nutch/apache-nutch-1.16/conf/nutch-site.xml"]
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:621)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:491)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:475)
+	at com.ctc.wstx.sr.BasicStreamReader.handleExtraRoot(BasicStreamReader.java:2242)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2156)
+	at com.ctc.wstx.sr.BasicStreamReader.closeContentTree(BasicStreamReader.java:2991)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2734)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1123)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2796)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2730)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2605)
+	at org.apache.hadoop.conf.Configuration.set(Configuration.java:1269)
+	at org.apache.hadoop.util.GenericOptionsParser.processGeneralOptions(GenericOptionsParser.java:310)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:572)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 13:43:17,855 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:43:17,888 ERROR conf.Configuration - error parsing conf nutch-site.xml
+com.ctc.wstx.exc.WstxParsingException: Unexpected close tag </configuration>; expected </property>.
+ at [row,col,system-id]: [17,15,"file:/D:/nutch/apache-nutch-1.16/conf/nutch-site.xml"]
+	at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:621)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:491)
+	at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:475)
+	at com.ctc.wstx.sr.BasicStreamReader.reportWrongEndElem(BasicStreamReader.java:3365)
+	at com.ctc.wstx.sr.BasicStreamReader.readEndElem(BasicStreamReader.java:3292)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromTree(BasicStreamReader.java:2911)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1123)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:2796)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:2730)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:2605)
+	at org.apache.hadoop.conf.Configuration.set(Configuration.java:1269)
+	at org.apache.hadoop.util.GenericOptionsParser.processGeneralOptions(GenericOptionsParser.java:310)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:572)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 13:43:30,617 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:43:30,810 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 13:43:31,204 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+
+2020-05-04 13:50:56,089 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:50:56,243 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 13:50:56,629 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 13:52:16,773 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:52:16,923 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 13:52:17,299 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 13:52:37,615 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+2020-05-04 13:52:37,771 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 13:52:38,150 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:534)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:555)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:454)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:425)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:502)
+	... 6 more
+
+2020-05-04 14:07:27,430 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:07:27,586 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:07:27,979 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:07:35,586 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:07:35,744 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:07:36,133 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+
+2020-05-04 14:08:11,989 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:08:12,142 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:08:12,526 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:09:14,081 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:09:14,242 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:09:14,623 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:09:22,579 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:09:22,732 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:09:23,131 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+
+2020-05-04 14:09:48,979 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:09:49,128 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:09:49,501 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:09:59,973 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:10:00,138 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:10:00,554 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+
+2020-05-04 14:10:21,132 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:10:21,288 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:10:21,674 ERROR crawl.Generator - Generator: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:10:26,131 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 14:10:26,291 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:10:26,669 ERROR crawl.Generator - Generator: java.lang.RuntimeException: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:722)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:256)
+	at org.apache.hadoop.util.Shell.getSetPermissionCommand(Shell.java:273)
+	at org.apache.hadoop.fs.RawLocalFileSystem.setPermission(RawLocalFileSystem.java:767)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:235)
+	at org.apache.hadoop.fs.RawLocalFileSystem$LocalFSFileOutputStream.<init>(RawLocalFileSystem.java:219)
+	at org.apache.hadoop.fs.RawLocalFileSystem.createOutputStreamWithMode(RawLocalFileSystem.java:314)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:302)
+	at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:334)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSOutputSummer.<init>(ChecksumFileSystem.java:399)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:441)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1067)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1048)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1007)
+	at org.apache.hadoop.fs.FileSystem.createNewFile(FileSystem.java:1311)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:58)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:756)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+Caused by: java.io.FileNotFoundException: Hadoop bin directory does not exist: D:\hadoop\hadoop-common-2.2.0-bin-master\bin\bin -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:594)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	... 1 more
+
+2020-05-04 14:10:55,851 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:10:56,308 INFO  crawl.Generator - Generator: starting at 2020-05-04 14:10:56
+2020-05-04 14:10:56,308 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2020-05-04 14:10:56,308 INFO  crawl.Generator - Generator: filtering: false
+2020-05-04 14:10:56,309 INFO  crawl.Generator - Generator: normalizing: true
+2020-05-04 14:10:56,310 INFO  crawl.Generator - Generator: topN: 50000
+2020-05-04 14:10:56,556 ERROR crawl.Generator - Generator job failed: Input path does not exist: file:/D:/nutch/apache-nutch-1.16/data/crawldb/current
+2020-05-04 14:10:56,558 ERROR crawl.Generator - Generator: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/D:/nutch/apache-nutch-1.16/data/crawldb/current
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:329)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:271)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:393)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:314)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:331)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:202)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1893)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:819)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:15:16,426 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:15:16,854 INFO  crawl.Generator - Generator: starting at 2020-05-04 14:15:16
+2020-05-04 14:15:16,855 INFO  crawl.Generator - Generator: Selecting best-scoring urls due for fetch.
+2020-05-04 14:15:16,855 INFO  crawl.Generator - Generator: filtering: false
+2020-05-04 14:15:16,855 INFO  crawl.Generator - Generator: normalizing: true
+2020-05-04 14:15:16,856 INFO  crawl.Generator - Generator: topN: 50000
+2020-05-04 14:15:17,068 ERROR crawl.Generator - Generator job failed: Input path does not exist: file:/D:/nutch/apache-nutch-1.16/crawldb/current
+2020-05-04 14:15:17,070 ERROR crawl.Generator - Generator: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/D:/nutch/apache-nutch-1.16/crawldb/current
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:329)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:271)
+	at org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat.listStatus(SequenceFileInputFormat.java:59)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:393)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:314)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:331)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:202)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1570)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1567)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1893)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1567)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1588)
+	at org.apache.nutch.crawl.Generator.generate(Generator.java:819)
+	at org.apache.nutch.crawl.Generator.run(Generator.java:1039)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+
+2020-05-04 14:33:33,273 INFO  crawl.Injector - Injector: starting at 2020-05-04 14:33:33
+2020-05-04 14:33:33,273 INFO  crawl.Injector - Injector: crawlDb: Crawl/crawldb
+2020-05-04 14:33:33,273 INFO  crawl.Injector - Injector: urlDir: nutch/urls
+2020-05-04 14:33:33,274 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 14:33:33,396 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:33:33,823 ERROR crawl.Injector - Injector: java.io.FileNotFoundException: File nutch/urls does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.listStatus(RawLocalFileSystem.java:451)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1804)
+	at org.apache.hadoop.fs.FileSystem.listStatus(FileSystem.java:1849)
+	at org.apache.hadoop.fs.ChecksumFileSystem.listStatus(ChecksumFileSystem.java:675)
+	at org.apache.nutch.crawl.Injector.inject(Injector.java:413)
+	at org.apache.nutch.crawl.Injector.run(Injector.java:569)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Injector.main(Injector.java:534)
+
+2020-05-04 14:33:59,065 INFO  crawl.Injector - Injector: starting at 2020-05-04 14:33:59
+2020-05-04 14:33:59,066 INFO  crawl.Injector - Injector: crawlDb: Crawl/crawldb
+2020-05-04 14:33:59,066 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 14:33:59,066 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 14:33:59,200 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:33:59,592 ERROR crawl.Injector - Injector: java.io.IOException: lock file Crawl/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Injector.inject(Injector.java:399)
+	at org.apache.nutch.crawl.Injector.run(Injector.java:569)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Injector.main(Injector.java:534)
+
+2020-05-04 14:34:29,812 INFO  crawl.Injector - Injector: starting at 2020-05-04 14:34:29
+2020-05-04 14:34:29,813 INFO  crawl.Injector - Injector: crawlDb: data/crawldb
+2020-05-04 14:34:29,813 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 14:34:29,813 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 14:34:29,955 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:34:30,390 INFO  crawl.Injector - Injecting seed URL file file:/D:/nutch/apache-nutch-1.16/urls/seed.txt
+2020-05-04 14:38:28,722 INFO  crawl.Injector - Injector: starting at 2020-05-04 14:38:28
+2020-05-04 14:38:28,723 INFO  crawl.Injector - Injector: crawlDb: data/crawldb
+2020-05-04 14:38:28,723 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 14:38:28,723 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 14:38:28,855 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:38:29,232 ERROR crawl.Injector - Injector: java.io.IOException: lock file data/crawldb/.locked already exists.
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:50)
+	at org.apache.nutch.util.LockUtil.createLockFile(LockUtil.java:80)
+	at org.apache.nutch.crawl.CrawlDb.lock(CrawlDb.java:198)
+	at org.apache.nutch.crawl.Injector.inject(Injector.java:399)
+	at org.apache.nutch.crawl.Injector.run(Injector.java:569)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Injector.main(Injector.java:534)
+
+2020-05-04 14:38:43,821 INFO  crawl.Injector - Injector: starting at 2020-05-04 14:38:43
+2020-05-04 14:38:43,822 INFO  crawl.Injector - Injector: crawlDb: data/crawldb
+2020-05-04 14:38:43,822 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 14:38:43,822 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 14:38:43,960 WARN  util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-04 14:38:44,413 INFO  crawl.Injector - Injecting seed URL file file:/D:/nutch/apache-nutch-1.16/urls/seed.txt
+2020-05-04 16:26:28,424 WARN  util.Shell - Did not find winutils.exe: {}
+java.io.FileNotFoundException: Could not locate Hadoop executable: D:\hadoop\hadoop-3.2.1\bin\winutils.exe -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.getQualifiedBinInner(Shell.java:604)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:578)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:675)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:520)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:571)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:174)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:156)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.nutch.crawl.Generator.main(Generator.java:987)
+2020-05-04 16:54:12,564 INFO  crawl.Injector - Injector: starting at 2020-05-04 16:54:12
+2020-05-04 16:54:12,572 INFO  crawl.Injector - Injector: crawlDb: crawldb
+2020-05-04 16:54:12,572 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 16:54:12,572 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 16:54:20,602 INFO  crawl.Injector - Injector: starting at 2020-05-04 16:54:20
+2020-05-04 16:54:20,603 INFO  crawl.Injector - Injector: crawlDb: crawldb
+2020-05-04 16:54:20,603 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 16:54:20,603 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 16:55:52,394 INFO  crawl.Injector - Injector: starting at 2020-05-04 16:55:52
+2020-05-04 16:55:52,395 INFO  crawl.Injector - Injector: crawlDb: data/crawldb
+2020-05-04 16:55:52,395 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 16:55:52,395 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 16:56:11,386 INFO  crawl.Injector - Injector: starting at 2020-05-04 16:56:11
+2020-05-04 16:56:11,386 INFO  crawl.Injector - Injector: crawlDb: //crawldb
+2020-05-04 16:56:11,387 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 16:56:11,387 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 16:56:11,832 ERROR crawl.Injector - Injector: org.apache.hadoop.fs.UnsupportedFileSystemException: No FileSystem for scheme "null"
+	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3220)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3240)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:121)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3291)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3259)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:470)
+	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:356)
+	at org.apache.nutch.crawl.Injector.inject(Injector.java:390)
+	at org.apache.nutch.crawl.Injector.run(Injector.java:569)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+	at org.apache.nutch.crawl.Injector.main(Injector.java:534)
+
+2020-05-04 16:56:22,144 INFO  crawl.Injector - Injector: starting at 2020-05-04 16:56:22
+2020-05-04 16:56:22,145 INFO  crawl.Injector - Injector: crawlDb: crawldb
+2020-05-04 16:56:22,145 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 16:56:22,145 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.
+2020-05-04 17:01:33,539 INFO  crawl.Injector - Injector: starting at 2020-05-04 17:01:33
+2020-05-04 17:01:33,540 INFO  crawl.Injector - Injector: crawlDb: crawldb
+2020-05-04 17:01:33,540 INFO  crawl.Injector - Injector: urlDir: urls
+2020-05-04 17:01:33,540 INFO  crawl.Injector - Injector: Converting injected urls to crawl db entries.

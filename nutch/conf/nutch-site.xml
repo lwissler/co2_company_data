@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+
+
+<configuration>
+<property>
+ <name>http.agent.name</name>
+ <value>emissioncrawler</value>
+</property>
+<property>
+ <name>plugin.includes</name>
+ <value>protocol-http|urlfilter-(regex|validator)|parse-(html|tika|text)|index-(basic|anchor|more)|indexer-solr|scoring-opic|urlnormalizer-(pass|regex|basic)</value>  
+</property>
+</configuration>

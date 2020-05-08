@@ -1,0 +1,49 @@
+2020-05-06 11:54:10.524 INFO  (main) [   ] o.e.j.u.log Logging initialized @918ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-06 11:54:10.653 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+8-LTS
+2020-05-06 11:54:10.666 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/solr/solr-8.5.1/server/contexts/] at interval 0
+2020-05-06 11:54:10.711 WARN  (main) [   ] o.e.j.w.WebInfConfiguration Web application not found D:\solr\solr-8.5.1\server/solr-webapp/webapp
+2020-05-06 11:54:10.711 WARN  (main) [   ] o.e.j.w.WebAppContext Failed startup of context o.e.j.w.WebAppContext@7e0aadd0{/solr,null,UNAVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp} => java.io.FileNotFoundException: D:\solr\solr-8.5.1\server/solr-webapp/webapp
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:663)
+java.io.FileNotFoundException: D:\solr\solr-8.5.1\server/solr-webapp/webapp
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:663) ~[jetty-webapp-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:141) ~[jetty-webapp-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:488) ~[jetty-webapp-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:523) ~[jetty-webapp-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:46) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:188) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:513) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:154) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:173) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(WebAppProvider.java:447) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:66) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:784) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:753) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:641) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:540) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:146) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:599) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:249) ~[jetty-deploy-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.server.Server.start(Server.java:407) ~[jetty-server-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:100) ~[jetty-server-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:371) ~[jetty-server-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72) ~[jetty-util-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$0(XmlConfiguration.java:1888) ~[jetty-xml-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1837) ~[jetty-xml-9.4.24.v20191120.jar:9.4.24.v20191120]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218) ~[start.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.start.Main.start(Main.java:491) ~[start.jar:9.4.24.v20191120]
+	at org.eclipse.jetty.start.Main.main(Main.java:77) ~[start.jar:9.4.24.v20191120]
+2020-05-06 11:54:10.729 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5b080f3a{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-06 11:54:10.729 INFO  (main) [   ] o.e.j.s.Server Started @1125ms
+2020-05-06 11:57:21.599 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5b080f3a{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-06 11:57:21.599 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7e0aadd0{/solr,null,UNAVAILABLE}{D:\solr\solr-8.5.1\server/solr-webapp/webapp}
