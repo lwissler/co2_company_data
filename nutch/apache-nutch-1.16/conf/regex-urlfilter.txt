@@ -65,6 +65,11 @@
 -youtube.com
 -facebook.com
 -amazon.com
+-wiktionary.org
+-wikidata.org
+-flickr.com
+-wikimedia.org
+-unsplash.com
 
 #remove languages
 -/ko/
@@ -73,6 +78,51 @@
 -/es/
 -/fr/
 -/ja/
+-/th/
+-/sk/
+-/sq/
+-/ru/
+-/ro/
+-/rmy/
+-/pl/
+-/pms/
+-/pmb/
+-/nl/
+-/lt/
+-/lb/
+-/is/
+-/hr/
+-/ht/
+-/hy/
+-/ia/
+-/ie/
+-/ilo/
+
+-/fr.
+-/ko.
+-/es.
+-/zh-yue.
+-/zh.
+-/th.
+-/sk.
+-/sq.
+-/ru.
+-/ro.
+-/rmy.
+-/pt.
+-/pl.
+-/pms.
+-/pmb.
+-/nl.
+-/lt.
+-/lb.
+-/is.
+-/hr.
+-/ht.
+-/hy.
+-/ia.
+-/ie.
+-/ilo.
 
 # accept anything else
 +.
