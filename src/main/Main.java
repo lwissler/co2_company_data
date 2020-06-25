@@ -2,6 +2,7 @@ package main;
 
 import parser.CDPParser;
 import parser.GHG;
+import query.QuerySolr;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -10,6 +11,7 @@ import java.util.Date;
 
 import auxiliary.Settings;
 import opennlp.tools.parser.Parse;
+import org.apache.log4j.*;
 
 public class Main {
 
@@ -30,10 +32,12 @@ public class Main {
 		
 //		Settings.token = args[0];
 		CDPParser cdpparser = new CDPParser();
+		QuerySolr query = new QuerySolr();
 //		GHG ghg = new GHG();
 		
 		try {
-			cdpparser.parsePDF("https://www.akamai.com/it/it/multimedia/documents/sustainability/cdp-2019.pdf");			
+//			query.query();
+			cdpparser.parsePDF("https://www.fcx.com/sites/fcx/files/documents/sustainability/2017_cdp_climate_change_info_req.pdf");			
 			
 			
 			

@@ -27,6 +27,7 @@ import org.json.simple.JSONObject;
 import auxiliary.Tools;
 import opennlp.tools.stemmer.PorterStemmer;
 import opennlp.tools.tokenize.SimpleTokenizer;
+import org.apache.log4j.*;
 
 public class CDPParser {
 	Tools tools = new Tools();
@@ -184,6 +185,53 @@ public class CDPParser {
 	
 	@SuppressWarnings("unchecked")
 	private void parse(String text) throws Exception {
+		try {
+			parseNewStyle(text);
+		}catch(Exception e) {
+			parseOldStyle(text);
+		}
+	}
+	
+	
+
+	private void parseOldStyle(String text) throws ParseException {
+JSONObject res = new JSONObject();
+		
+		res.put("Company", getCompany(text));
+		
+		text = text.substring(text.indexOf("C7.2"));
+		text = text.replace("\n", " ").replace("\r", " ").replace(System.getProperty("line.separator"), " ").replaceAll(" +", " ");;
+		
+		res.put("ReportingStandard", getStandardOld(text));
+		
+		JSONObject scope1 = new JSONObject();
+		res.put("Scope 1", scope1);
+		
+		scope1.put("CO2", getScope1CO2Old(text));	
+		String startDate = getStartDateOld(text);
+		String endDate = getEndDateOld(text);
+		
+		scope1.put("StartDate", startDate);
+		scope1.put("EndDate", endDate);
+		
+		JSONObject scope2 = new JSONObject();
+		res.put("Scope 2", scope2);
+		
+		scope2.put("CO2", getScope2Location(text));
+		scope2.put("CO2 market based", getScope2market(text));
+		scope2.put("StartDate", startDate);
+		scope2.put("EndDate", endDate);
+		
+		JSONObject scope3json = new JSONObject();
+		res.put("Scope 3", scope3json);
+		
+		scope3json.put("CO2", getScope3CO2(text));
+		
+		tools.print(res);
+		
+	}
+
+	private void parseNewStyle(String text) throws ParseException {
 		JSONObject res = new JSONObject();
 		
 		res.put("Company", getCompany(text));
@@ -206,7 +254,7 @@ public class CDPParser {
 		scope2.put("CO2", getScope2Location(text));
 		scope2.put("CO2 market based", getScope2market(text));
 		scope2.put("StartDate", getScope2StartDate(text));
-		scope2.put("StartDate", getScope2EndDate(text));
+		scope2.put("EndDate", getScope2EndDate(text));
 		
 		JSONObject scope3json = new JSONObject();
 		res.put("Scope 3", scope3json);
@@ -214,9 +262,8 @@ public class CDPParser {
 		scope3json.put("CO2", getScope3CO2(text));
 		
 		tools.print(res);
+		
 	}
-	
-	
 
 	private Long getScope3CO2(String text) {
 		Long res = null;
@@ -267,6 +314,44 @@ public class CDPParser {
 		return res;
 	}
 
+	private Long getScope2marketOld(String text) {
+		Long res = null;
+		String scope2market;
+		try {
+			scope2market = text.split(Pattern.quote("Scope 2, market-based (if applicable)"))[1].split("Start date")[0].trim();
+			res = tools.parseNumber(scope2market);
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				text = text.split("8.3")[1];
+				scope2market = text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim();
+				res = tools.parseNumber(scope2market);
+			} catch (Exception e1) {
+			}
+		}
+		
+		return res;
+	}
+
+	private Long getScope2LocationOld(String text) {
+		Long res = null;
+		
+		try {
+			String scope2location = text.split(Pattern.quote("CC8.3"))[1].split("Scope 2, location-based")[1].split(Pattern.quote("Scope 2, market-based (if applicable)"))[0].trim();
+			res = tools.parseNumber(scope2location);
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				text = text.split("8.3")[1];
+				String scope2location = text.split(Pattern.quote("Comment"))[1].split(" ")[1].trim();
+				res = tools.parseNumber(scope2location);
+			} catch (Exception e1) {
+			}
+		}
+		
+		return res;
+	}
+	
 	private Long getScope2market(String text) {
 		Long res = null;
 		String scope2market;
@@ -339,12 +424,53 @@ public class CDPParser {
 		
 		return res;
 	}
+	
+	private String getEndDateOld(String text) throws ParseException {
+		String res = null;
+		try {
+			String scope1EndDate = text.split("Page: CC8. Emissions Data -(")[1].split("-")[1].split(")")[0].trim();
+			res = tools.formatCDPDate(scope1EndDate.replace(",", ""));
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[3].trim());
+			}
+		}
+		
+		return res;
+	}
 
-	private Object getCompany(String text) {
-		String company = text.split(Pattern.quote("(C0.1) Give a general description and introduction to your organization."))[1].split(Pattern.quote("C0.2"))[0].trim();
+	private String getStartDateOld(String text) throws ParseException {
+		String res = null;
+		
+		try {
+			String scope1StartDate = text.split("Page: CC8. Emissions Data -(")[1].split("-")[0].trim();
+			res = tools.formatCDPDate(scope1StartDate.replace(",", ""));
+		} catch (Exception e) {
+			//probably table based reply
+			try {
+				res = tools.formatCDPDate(text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim());
+			} catch (ParseException e1) {
+				res = tools.formatCDPDate2(text.split(Pattern.quote("Comment"))[1].split(" ")[2].trim());
+			}
+		}
+		
+		return res;
+	}
+
+	private String getCompany(String text) {
+		String company = null;
+		
+		try {
+			company = text.split(Pattern.quote("(C0.1) Give a general description and introduction to your organization."))[1].split(Pattern.quote("C0.2"))[0].trim();
+		} catch (Exception e) {
+			company = text.split(Pattern.quote("give a general description and introduction to your organization."))[1].split(Pattern.quote("C0.2"))[0].trim();
+		}
 		//getCompanyList
 		//iterate companies and if contained return
-		return null;
+		return company;
 	}
 
 	private Object getStandard(String text) {
@@ -364,6 +490,24 @@ public class CDPParser {
 		}
 		return standard.split(":")[0];
 	}
+	
+	private Object getStandardOld(String text) {
+		String standard;
+//		try {
+			standard = text.split("Please select the published methodologies that you use")[1].split("C7.3")[0].trim();
+//		} catch (Exception e) {
+//			try {
+//				standard = text.split("calculate Scope1 and Scope 2 emissions.")[1].split("C6. Emissions")[0].trim();
+//			} catch (Exception e1) {
+//				try {
+//					standard = text.split("calculate Scope 1 and Scope2 emissions.")[1].split("C6. Emissions")[0].trim();
+//				} catch (Exception e2) {
+//					standard = text.split("calculate Scope1 and Scope2 emissions.")[1].split("C6. Emissions")[0].trim();
+//				}
+//			}
+//		}
+		return standard.split(":")[0];
+	}
 
 	private Long getScope1CO2(String text) {
 		String scope1CO2;
@@ -372,6 +516,26 @@ public class CDPParser {
 			scope1CO2 = text.split(Pattern.quote("Gross global Scope 1 emissions (metric tons CO2e)"))[1].split("Start date")[0].trim();
 		} catch (Exception e) {
 			scope1CO2 = text.split(Pattern.quote("Gross global Scope1 emissions (metric tons CO2e)"))[1].split("Start date")[0].trim();
+		}
+		
+		try {
+			res = tools.parseNumber(scope1CO2);
+		} catch (NumberFormatException e) {
+			//probably table based reply
+			scope1CO2 = text.split(Pattern.quote("Comment"))[1].split(" ")[1].trim();
+			res = tools.parseNumber(scope1CO2);
+		}
+		
+		return res;
+	}
+	
+	private Long getScope1CO2Old(String text) {
+		String scope1CO2;
+		Long res = null; 
+		try {
+			scope1CO2 = text.split(Pattern.quote("gross global Scope 1 emissions figures in metric tonnes CO2e"))[1].split("CC8.3")[0].trim();
+		} catch (Exception e) {
+			scope1CO2 = text.split(Pattern.quote("Gross global Scope1 emissions (metric tons CO2e)"))[1].split("End-year of reporting period")[0].trim();
 		}
 		
 		try {

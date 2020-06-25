@@ -45,5 +45,10 @@
 	<classpathentry kind="lib" path="jersey-media-json-jackson-2.25.jar"/>
 	<classpathentry kind="lib" path="jersey-server-2.25.jar"/>
 	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="solr-solrj-7.1.0.jar"/>
+	<classpathentry kind="lib" path="httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="jcl-over-slf4j-1.7.7.jar"/>
+	<classpathentry kind="lib" path="slf4j-log4j12-1.7.30.jar"/>
+	<classpathentry kind="lib" path="slf4j-api-1.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
