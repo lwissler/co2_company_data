@@ -2,6 +2,8 @@ package main;
 
 import parser.CDPParser;
 import parser.GHG;
+import parser.GRI;
+import parser.Parser;
 import query.QuerySolr;
 
 import java.io.FileNotFoundException;
@@ -13,6 +15,9 @@ import auxiliary.Settings;
 import opennlp.tools.parser.Parse;
 import org.apache.log4j.*;
 
+import com.github.peterbencze.serritor.api.CrawlRequest;
+import com.github.peterbencze.serritor.api.CrawlerConfiguration;
+
 public class Main {
 
 	/**
@@ -21,23 +26,43 @@ public class Main {
 	public static void main(String[] args) {
 		PrintStream out;
 		Date now = new Date();
-//		String nowStr = now.toLocaleString().replace(":", "-").replace(".", "_");
-//		try {
-//			out = new PrintStream(new FileOutputStream("./log/parse"+nowStr+".txt"));
-//			System.setOut(out);
-//		} catch (FileNotFoundException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
+		String nowStr = now.toLocaleString().replace(":", "-").replace(".", "_");
+		try {
+			out = new PrintStream(new FileOutputStream("./log/parse"+nowStr+".txt"));
+			System.setOut(out);
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 //		Settings.token = args[0];
 		CDPParser cdpparser = new CDPParser();
-		QuerySolr query = new QuerySolr();
+		Parser[] parsers = {new GHG(), new GRI()};
+		QuerySolr query = new QuerySolr(parsers);
 //		GHG ghg = new GHG();
 		
 		try {
-//			query.query();
-			cdpparser.parsePDF("https://www.fcx.com/sites/fcx/files/documents/sustainability/2017_cdp_climate_change_info_req.pdf");			
+//			CrawlerConfiguration config = new CrawlerConfiguration.CrawlerConfigurationBuilder()
+//			        .setOffsiteRequestFilterEnabled(true)
+//			        .addAllowedCrawlDomain("example.com")
+//			        .addCrawlSeed(CrawlRequest.createDefault("https://global.epson.com/SR/report/archive.html"))
+//			        .build();
+//
+//			MyCrawler crawler = new MyCrawler(config);
+//
+//			try {
+//				crawler.start();
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+			
+//			query.queryAll();
+//			query.query("\"GRI Index\"");
+//			query.queryGRIIndex();
+			
+			
+			cdpparser.processFile("2020-08-21_Empfehlungsübersicht_Aktien.pdf");
+//			cdpparser.processURL("https://www.fcx.com/sites/fcx/files/documents/sustainability/2017_cdp_climate_change_info_req.pdf");			
 			
 			
 			

@@ -1,5 +1,6 @@
 package parser;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -13,31 +14,35 @@ import auxiliary.Paths;
 import auxiliary.Tools;
 
 public class Parser {
-	HashMap<String, String> keywords;
+	public HashMap<String, String> keywords;
 	Tools tools = new Tools();
 	
 	public Boolean processURL(String url, String companyName) throws Exception{
-		Tools tools = new Tools();
-		tools.print("Processing "+companyName+" ("+url+")");
+//		tools.print("Processing "+companyName+" ("+url+")");
 		
-		Response resp = tools.apiCall(url);
-		
-		if(validate(resp)){
-			tools.print("Valid data, initiating parsing...");
-			JSONObject data = parse(resp.parse());
-			data.put("Company", companyName);
-			tools.print(data);
+		try {
+			Response resp = tools.apiCall(url);
+			
+			if(validate(resp)){
+				tools.print("Valid data, initiating parsing...");
+				JSONObject data = parse(resp.parse(),url);
+				data.put("Company", companyName);
+				tools.print(data);
 //			tools.postToMongo(data, Paths.API_ADDRESS+"/"+companyName);
-			return true;
-		}else{
-			tools.print("No carbon data found");
-			return false;
+				return true;
+			}else{
+//			tools.print("No carbon data found");
+				return false;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+		return false;
 	}
 
 	@SuppressWarnings("unchecked")
-	private JSONObject parse(Document doc) {
-		tools.print("Parsing URL");
+	private JSONObject parse(Document doc, String url) {
+		tools.print("Parsing URL "+url);
 		
 		//build JSON structure
 		JSONObject res = new JSONObject();
@@ -86,7 +91,7 @@ public class Parser {
 				if(fields.size()>1){
 					try {
 						String infoType = fields.get(0).toString();
-						tools.print(infoType);
+//						tools.print(infoType);
 						Iterator<Entry<String, String>> iter = keywords.entrySet().iterator();
 						while(iter.hasNext()){
 							String key = iter.next().getKey();
@@ -106,7 +111,7 @@ public class Parser {
 						tools.print("Invalid Data, Trying again...");
 						try {
 							String infoType = fields.get(0).toString();
-							tools.print(infoType);
+//							tools.print(infoType);
 							Iterator<Entry<String, String>> iter = keywords.entrySet().iterator();
 							while(iter.hasNext()){
 								String key = iter.next().getKey();
@@ -134,7 +139,7 @@ public class Parser {
 	}
 
 	private boolean validate(Response resp) {
-		tools.print("Validating URL");
+//		tools.print("Validating URL");
 		String body = resp.body().toLowerCase();
 //		tools.print(body);
 		double count = 0;

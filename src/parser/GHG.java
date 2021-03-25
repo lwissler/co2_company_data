@@ -28,7 +28,7 @@ public class GHG extends Parser{
 		
 		keywords.put("kohlenmonoxid", "CO");
 		
-		keywords.put("lösemittel", "VOC");
+		keywords.put("lï¿½semittel", "VOC");
 		
 		keywords.put("staub", "staub");
 		

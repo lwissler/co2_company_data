@@ -1,0 +1,3 @@
+Fri Jun 26 17:01:46 CEST 2020: Processed docs 1000 to 1010 of 12832
+Fri Jun 26 17:01:46 CEST 2020: Processed docs 1010 to 1020 of 12832
+Fri Jun 26 17:01:46 CEST 2020: Processed docs 1020 to 1030 of 12832

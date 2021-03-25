@@ -1,0 +1,15 @@
+Mon Jun 29 18:26:13 CEST 2020: Processing https://www.kao.com/global/en/sustainability/databook/sustainability-backnumber/
+Mon Jun 29 18:26:16 CEST 2020: Processing https://global.epson.com/SR/report/archive.html
+Mon Jun 29 18:26:16 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report
+Mon Jun 29 18:26:17 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=body-copy
+Mon Jun 29 18:26:18 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=right-rail
+Mon Jun 29 18:26:19 CEST 2020: Processing https://www.isosgroup.com/clients
+Mon Jun 29 18:26:20 CEST 2020: Processing https://d1io3yog0oux5.cloudfront.net/vfc/files/documents/Sustainability/Resources/VF+2018+GRI+Index.pdf
+Mon Jun 29 18:26:21 CEST 2020: Processing https://growthpoint.com.au/sites/default/files/other-reports/2019/Growthpoint-2019-GRI-index-web.pdf
+Mon Jun 29 18:26:26 CEST 2020: Processing https://sebgroup.com/investor-relations/reports-and-presentations/sustainability-reports
+Mon Jun 29 18:26:27 CEST 2020: Processing https://hexatronicgroup.com/en/sustainability/sustainability-report/
+Mon Jun 29 18:26:27 CEST 2020: Processed docs 0 to 10 of 653251
+Mon Jun 29 18:26:27 CEST 2020: Processing http://www.hindalco.com/sustainability/sustainability-reports
+Mon Jun 29 18:26:28 CEST 2020: Processing https://www.shreecement.com/pages/csr.php
+Mon Jun 29 18:26:30 CEST 2020: Processing https://www.riso.co.jp/english/company/eco/report/
+Mon Jun 29 18:26:32 CEST 2020: Processing https://mediaroom.wm.com/tag/sustainability-report/

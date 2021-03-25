@@ -1,5 +1,6 @@
 package parser;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 
@@ -28,7 +29,7 @@ public class GRI extends Parser{
 		
 		keywords.put("kohlenmonoxid", "CO");
 		
-		keywords.put("lösemittel", "VOC");
+		keywords.put("lï¿½semittel", "VOC");
 		
 		keywords.put("staub", "staub");
 		
@@ -41,6 +42,11 @@ public class GRI extends Parser{
 		keywords.put("GRI","");
 		keywords.put("emission","");
 		keywords.put("<sub>2</sub>","");
+	}
+	
+	public void indexParser(String text, String url) throws IOException {
+//		String text = tools.apiCall(url).parse().toString();
+		String scope1 = text.split("305-1")[1].split("305-2")[0];
 	}
 	
 }

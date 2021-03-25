@@ -1,0 +1,1 @@
+Thu Jun 25 22:41:52 CEST 2020: {"Scope 1":{"StartDate":"2016-01-01","CO2":5418730,"EndDate":"2016-12-31"},"Company":".","Scope 3":{"CO2":null},"Scope 2":{"StartDate":"2016-01-01","CO2":4923748,"EndDate":"2016-12-31","CO2 market based":null},"ReportingStandard":"The Greenhouse Gas Protocol"}

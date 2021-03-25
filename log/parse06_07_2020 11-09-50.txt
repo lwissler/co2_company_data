@@ -1,0 +1,20 @@
+Mon Jul 06 11:10:09 CEST 2020: Processing https://www.kao.com/global/en/sustainability/databook/sustainability-backnumber/
+Mon Jul 06 11:10:13 CEST 2020: Processing https://global.epson.com/SR/report/archive.html
+Mon Jul 06 11:10:16 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report
+Mon Jul 06 11:10:18 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=body-copy
+Mon Jul 06 11:10:19 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=right-rail
+Mon Jul 06 11:10:21 CEST 2020: Processing https://d1io3yog0oux5.cloudfront.net/vfc/files/documents/Sustainability/Resources/VF+2018+GRI+Index.pdf
+Mon Jul 06 11:10:27 CEST 2020: Processing https://www.isosgroup.com/clients
+Mon Jul 06 11:10:35 CEST 2020: Processing https://growthpoint.com.au/sites/default/files/other-reports/2019/Growthpoint-2019-GRI-index-web.pdf
+Mon Jul 06 11:10:44 CEST 2020: Processing https://sebgroup.com/investor-relations/reports-and-presentations/sustainability-reports
+Mon Jul 06 11:10:47 CEST 2020: Processing https://hexatronicgroup.com/en/sustainability/sustainability-report/
+Mon Jul 06 11:17:34 CEST 2020: Processed docs 0 to 10 of 693488
+Mon Jul 06 11:17:36 CEST 2020: Processing http://www.hindalco.com/sustainability/sustainability-reports
+Mon Jul 06 11:17:43 CEST 2020: Processing https://www.shreecement.com/pages/csr.php
+Mon Jul 06 11:17:50 CEST 2020: Processing https://www.riso.co.jp/english/company/eco/report/
+Mon Jul 06 11:17:55 CEST 2020: Processing https://mediaroom.wm.com/tag/sustainability-report/
+Mon Jul 06 11:17:59 CEST 2020: Processing https://www.oceanagold.com/sustainability/sustainability-reports/
+Mon Jul 06 11:18:04 CEST 2020: Processing https://jindalsteelpower.com/sustainabilities/business-sustainability-report.html
+Mon Jul 06 11:18:16 CEST 2020: Processing https://www.nikon.com/about/sustainability/report/index.htm
+Mon Jul 06 11:18:22 CEST 2020: Processing https://ptpp.co.id/sustainability/report
+Mon Jul 06 11:19:12 CEST 2020: Processing https://shantagold.com/sustainability/sustainability-report/

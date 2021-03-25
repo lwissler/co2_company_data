@@ -1,0 +1,68 @@
+Mon Jun 29 16:19:37 CEST 2020: Processing https://www.kao.com/global/en/sustainability/databook/sustainability-backnumber/
+Mon Jun 29 16:19:40 CEST 2020: Processing https://global.epson.com/SR/report/archive.html
+Mon Jun 29 16:19:42 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report
+Mon Jun 29 16:19:43 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=body-copy
+Mon Jun 29 16:19:44 CEST 2020: Processing https://sealedair.com/sustainability/sustainability-report?campname=insights?loc=right-rail
+Mon Jun 29 16:19:44 CEST 2020: Processing https://www.isosgroup.com/clients
+Mon Jun 29 16:19:46 CEST 2020: Processing https://d1io3yog0oux5.cloudfront.net/vfc/files/documents/Sustainability/Resources/VF+2018+GRI+Index.pdf
+Mon Jun 29 16:19:47 CEST 2020: Processing https://growthpoint.com.au/sites/default/files/other-reports/2019/Growthpoint-2019-GRI-index-web.pdf
+Mon Jun 29 16:19:53 CEST 2020: Processing https://sebgroup.com/investor-relations/reports-and-presentations/sustainability-reports
+Mon Jun 29 16:19:54 CEST 2020: Processing https://hexatronicgroup.com/en/sustainability/sustainability-report/
+Mon Jun 29 16:19:54 CEST 2020: Processed docs 0 to 10 of 653251
+Mon Jun 29 16:19:54 CEST 2020: Processing http://www.hindalco.com/sustainability/sustainability-reports
+Mon Jun 29 16:19:56 CEST 2020: Processing https://www.shreecement.com/pages/csr.php
+Mon Jun 29 16:19:56 CEST 2020: Processing https://www.riso.co.jp/english/company/eco/report/
+Mon Jun 29 16:19:59 CEST 2020: Processing https://mediaroom.wm.com/tag/sustainability-report/
+Mon Jun 29 16:20:00 CEST 2020: Processing https://www.oceanagold.com/sustainability/sustainability-reports/
+Mon Jun 29 16:20:01 CEST 2020: Processing https://jindalsteelpower.com/sustainabilities/business-sustainability-report.html
+Mon Jun 29 16:20:04 CEST 2020: Processing https://www.nikon.com/about/sustainability/report/index.htm
+Mon Jun 29 16:20:05 CEST 2020: Processing https://ptpp.co.id/sustainability/report
+Mon Jun 29 16:20:09 CEST 2020: Processing https://shantagold.com/sustainability/sustainability-report/
+Mon Jun 29 16:21:34 CEST 2020: Processing http://www.shantagold.com/sustainability/sustainability-report/
+Mon Jun 29 16:23:01 CEST 2020: Processed docs 10 to 20 of 653251
+Mon Jun 29 16:23:02 CEST 2020: Processing https://www.globalreporting.org/information/about-gri/Pages/GRIs-own-reports.aspx
+Mon Jun 29 16:23:04 CEST 2020: Processing https://www.capitalpower.com/sustainability/sustainability-reports/
+Mon Jun 29 16:23:07 CEST 2020: Processing https://oceanagold.com/sustainability/sustainability-reports/
+Mon Jun 29 16:23:09 CEST 2020: Processing https://sealedair.com/sustainability-report
+Mon Jun 29 16:23:10 CEST 2020: Processing https://sail.co.in/sustainability-report
+Mon Jun 29 16:23:13 CEST 2020: Processing https://nolato.com/en/corporate-responsibility/sustainability-report
+Mon Jun 29 16:23:15 CEST 2020: Processing https://resona-gr.co.jp/holdings/english/sustainability/report/index.html
+Mon Jun 29 16:23:18 CEST 2020: Processing https://www.sail.co.in/sustainability-report
+Mon Jun 29 16:23:20 CEST 2020: Processing https://mediaroom.wm.com/waste-management-publishes-2017-sustainability-report/
+Mon Jun 29 16:23:21 CEST 2020: Processing http://www.aepsustainability.com/
+Mon Jun 29 16:23:23 CEST 2020: Processed docs 20 to 30 of 653251
+Mon Jun 29 16:23:23 CEST 2020: Processing https://brambles.com/sustainability-review
+Mon Jun 29 16:23:27 CEST 2020: Processing https://www.brambles.com/sustainability-review
+Mon Jun 29 16:23:30 CEST 2020: Processing https://borregaard.com/Sustainability/Sustainability-Report
+Mon Jun 29 16:23:30 CEST 2020: Processing https://auss.no/sustainability/sustainability-report/
+Mon Jun 29 16:23:31 CEST 2020: Processing https://casella.com/about-us/casella-sustainability
+Mon Jun 29 16:23:32 CEST 2020: Processing http://www.casella.com/about-us/casella-sustainability
+Mon Jun 29 16:23:35 CEST 2020: Processing http://www.aepsustainability.com/performance/esg-reports/
+Mon Jun 29 16:23:37 CEST 2020: Processing https://brambles.com/annual-reports
+Mon Jun 29 16:23:41 CEST 2020: Processing https://portlandgeneral.com/corporate-responsibility/sustainability-report/2017-sustainability
+Mon Jun 29 16:23:42 CEST 2020: Processing https://www.cnhindustrial.com/en-us/sustainability/corporate_sustainability_reports/Pages/default.aspx
+Mon Jun 29 16:23:49 CEST 2020: Processed docs 30 to 40 of 653251
+Mon Jun 29 16:23:49 CEST 2020: Processing http://wm-mediaroom-alb-141381419.us-east-1.elb.amazonaws.com/waste-management-publishes-2017-sustainability-report/
+Mon Jun 29 16:23:51 CEST 2020: Processing https://sustainability.slgreen.com/reports/
+Mon Jun 29 16:23:54 CEST 2020: Processing https://aygaz.com.tr/en/corporate/sustainability-report
+Mon Jun 29 16:23:57 CEST 2020: Processing https://www.aygaz.com.tr/en/corporate/sustainability-report
+Mon Jun 29 16:24:01 CEST 2020: Processing https://fortunasilver.com/sustainability/sustainability-reports/2019-sustainability-report/
+Mon Jun 29 16:24:05 CEST 2020: Processing https://saabgroup.com/responsibility/sustainability-report/
+Mon Jun 29 16:24:12 CEST 2020: Processing http://sustainability.vermilionenergy.com/ourapproach/report/about-this-report-overview.cfm
+Mon Jun 29 16:24:16 CEST 2020: Processing https://bursasustain.bursamalaysia.com/droplet-details/sustainability/understanding-of-sustainability-varies-among-malaysians-find-entropia-report
+Mon Jun 29 16:24:24 CEST 2020: Processing https://www.casella.com/about-us/casella-sustainability
+Mon Jun 29 16:24:29 CEST 2020: Processing https://mediaroom.wm.com/sharing-our-progress-waste-management-publishes-2016-sustainability-report/
+Mon Jun 29 16:24:33 CEST 2020: Processed docs 40 to 50 of 653251
+Mon Jun 29 16:24:33 CEST 2020: Processing https://www.transalta.com/transalta-sustainability-reports-archived/
+Mon Jun 29 16:24:53 CEST 2020: Processing http://isechealthcare.com/2019-sustainability-report/
+Mon Jun 29 16:25:11 CEST 2020: Processing https://isechealthcare.com/2019-sustainability-report/
+Mon Jun 29 16:25:22 CEST 2020: Processing http://wm-mediaroom-alb-141381419.us-east-1.elb.amazonaws.com/waste-management-publishes-2019-sustainability-report/
+Mon Jun 29 16:25:25 CEST 2020: Processing https://mediaroom.wm.com/waste-management-publishes-2019-sustainability-report/
+Mon Jun 29 16:25:31 CEST 2020: Processing http://www.integratedreport.sasol.com/sustainability/our-approach-to-sustainability-reporting-based-on-our-sustainability-priorities.php
+Mon Jun 29 16:25:38 CEST 2020: Processing https://www.globalreporting.org/SiteCollectionDocuments/ReportOrExplainBrochure.pdf
+Mon Jun 29 16:25:43 CEST 2020: Processing https://lucaradiamond.com/sustainability/sustainability-reports/
+Mon Jun 29 16:25:56 CEST 2020: Processing https://www.lucaradiamond.com/sustainability/sustainability-reports/
+Mon Jun 29 16:26:07 CEST 2020: Processing https://cousins.com/content/2018-report
+Mon Jun 29 16:26:18 CEST 2020: Processed docs 50 to 60 of 653251
+Mon Jun 29 16:26:18 CEST 2020: Processing https://www.edie.net/insight-reports/
+Mon Jun 29 16:26:33 CEST 2020: Processing http://wm-mediaroom-alb-141381419.us-east-1.elb.amazonaws.com/?p=1901
